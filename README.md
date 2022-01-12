@@ -22,7 +22,7 @@ curl -s https://raw.githubusercontent.com/lcorcodilos/CombineHarvester/master/Co
 scram b clean; scram b -j 4
 cmsenv
 python -m virtualenv twoD-env
-source twoD-en/bin/activate
+source twoD-env/bin/activate
 cd 2DAlphabet
 git checkout refactor
 python setup.py develop
