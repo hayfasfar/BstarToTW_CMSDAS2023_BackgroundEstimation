@@ -26,9 +26,8 @@ git remote add upstream https://github.com/ammitra/BstarToTW_CMSDAS2022_Backgrou
 git remote -v
 ```
 
-### Enter the repository and continue the setup:
+### While still in the `src` directory:
 ```
-cd BstarToTW_CMSDAS2022_BackgroundEstimation
 git clone https://github.com/lcorcodilos/2DAlphabet.git
 git clone https://github.com/lcorcodilos/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit/
 curl -s https://raw.githubusercontent.com/lcorcodilos/CombineHarvester/master/CombineTools/scripts/sparse-checkout-ssh.sh | bash
