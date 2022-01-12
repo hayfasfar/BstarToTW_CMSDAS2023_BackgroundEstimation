@@ -27,7 +27,11 @@ cd 2DAlphabet
 git checkout refactor
 python setup.py develop
 ```
-Then, check that the installation worked with (in a python shell):
+Then, check that the installation worked by opening a python shell:
+```
+python
+```
+then, inside the python shell:
 ```
 import ROOT
 r = ROOT.RooParametricHist()
