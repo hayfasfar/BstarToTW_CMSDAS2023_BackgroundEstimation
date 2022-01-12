@@ -14,18 +14,6 @@ cd CMSSW_10_6_14/src
 cmsenv
 ```
 
-### In the `src` directory, clone the repo:
-```
-git clone https://github.com/ammitra/BstarToTW_CMSDAS2022_BackgroundEstimation.git
-```
-OR fork the code onto your own personal space and set the upstream:
-```
-https://github.com/<USERNAME>/BstarToTW_CMSDAS2022_BackgroundEstimation.git
-cd BstarToTW_CMSDAS2022_BackgroundEstimation
-git remote add upstream https://github.com/ammitra/BstarToTW_CMSDAS2022_BackgroundEstimation.git
-git remote -v
-```
-
 ### While still in the `src` directory:
 ```
 git clone https://github.com/lcorcodilos/2DAlphabet.git
@@ -43,4 +31,16 @@ Then, check that the installation worked with (in a python shell):
 ```
 import ROOT
 r = ROOT.RooParametricHist()
+```
+
+### Finally, clone this repo:
+```
+git clone https://github.com/ammitra/BstarToTW_CMSDAS2022_BackgroundEstimation.git
+```
+OR fork the code onto your own personal space and set the upstream:
+```
+https://github.com/<USERNAME>/BstarToTW_CMSDAS2022_BackgroundEstimation.git
+cd BstarToTW_CMSDAS2022_BackgroundEstimation
+git remote add upstream https://github.com/ammitra/BstarToTW_CMSDAS2022_BackgroundEstimation.git
+git remote -v
 ```
