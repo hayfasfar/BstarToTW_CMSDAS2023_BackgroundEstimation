@@ -49,6 +49,16 @@ git remote add upstream https://github.com/ammitra/BstarToTW_CMSDAS2022_Backgrou
 git remote -v
 ```
 
+## What to do after reconnecting to the LPC:
+Go back to the directory where you installed 2DAlphabet and where the virtual environment resides:
+```
+ssh -XY USERNAME@cmslpc-sl7.fnal.gov
+cd nobackup/CMSDAS2022/b2g_exercise/CMSSW_10_6_14/src/
+cmsenv
+source twoD-env/bin/activate
+```
+Then you should be good to go!
+
 ## Background estimate
 For this exercise we will use the [`2DAlphabet`](https://github.com/lcorcodilos/2DAlphabet/tree/refactor) github package. This package uses `.json` configuration files to specify the input histograms (to perform the fit) and the uncertainties. These uncertainties will be used inside of the `Higgs Combine` backend, the fitting package used widely within CMS. The 2DAlphabet package serves as a nice interface with Combine to allow the user to use the 2DAlphabet method without having to create their own custom version of combine. 
 
