@@ -2,3 +2,5 @@
 HiggsAnalysis/
 twoD-env/
 tWfits/
+*.pdf
+*.pyc
