@@ -33,7 +33,7 @@ import ROOT
 r = ROOT.RooParametricHist()
 ```
 
-### Finally, clone this repo:
+### Finally, clone this repo to the `src` directory as well:
 ```
 git clone https://github.com/ammitra/BstarToTW_CMSDAS2022_BackgroundEstimation.git
 ```
