@@ -61,7 +61,7 @@ def make_workspace():
     # is also saved as runConfig.json. This means, if you want to share your analysis with
     # someone, they can grab everything they need from this one spot - no need to have access to
     # the original files! (Note though that you'd have to change the config to point to organized_hists.root).
-    twoD = TwoDAlphabet('tWfits_deep', 'bstar.json', loadPrevious=False)
+    twoD = TwoDAlphabet('tWfits_deep', 'bstar_deep.json', loadPrevious=False)
 
     # Create the data - BKGs histograms
     qcd_hists = twoD.InitQCDHists()
@@ -149,7 +149,7 @@ def ML_fit(signal):
     '''
 
     # the default workspace directory, created in make_workspace(), is called tWfits_deep/
-    twoD = TwoDAlphabet('tWfits_deep', 'bstar.json', loadPrevious=True)
+    twoD = TwoDAlphabet('tWfits_deep', 'bstar_deep.json', loadPrevious=True)
 
     # Create a subset of the primary ledger using the select() method.
     # The select() method takes as a function as its first argument
@@ -177,7 +177,7 @@ def plot_fit(signal):
     '''
     Plots the fits from ML_fit() using 2DAlphabet
     '''
-    twoD = TwoDAlphabet('tWfits_deep', 'bstar.json', loadPrevious=True)
+    twoD = TwoDAlphabet('tWfits_deep', 'bstar_deep.json', loadPrevious=True)
     subset = twoD.ledger.select(_select_signal, 'signalLH{}'.format(signal))
     twoD.StdPlots('tW-{}_area'.format(signal), subset)
 
@@ -189,7 +189,7 @@ def perform_limit(signal):
     something reasonable to create the Asimov toy.
     '''
     # Returns a dictionary of the TF parameters with the names as keys and the post-fit values as dict values.
-    twoD = TwoDAlphabet('tWfits_deep', 'bstar.json', loadPrevious=True)
+    twoD = TwoDAlphabet('tWfits_deep', 'bstar_deep.json', loadPrevious=True)
 
     # GetParamsOnMatch() opens up the workspace's fitDiagnosticsTest.root and selects the rratio for the background
     params_to_set = twoD.GetParamsOnMatch('rratio*', 'tW-{}_area'.format(signal), 'b')
@@ -217,7 +217,7 @@ def perform_limit(signal):
         )
 
 if __name__ == "__main__":
-    #make_workspace()
+    make_workspace()
 
     for sig in range(1400,4200,200):
 	ML_fit(str(sig))

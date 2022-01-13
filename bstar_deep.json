@@ -13,11 +13,11 @@
     },
     "REGIONS": {
 	"Pass": {
-	    "PROCESSES": ["ttbar_bstar16","ttbar_bstar17","ttbar_bstar18","ttbar-semilep_bstar17","ttbar-semilep_bstar18","singletop_tW_bstar16","singletop_tW_bstar17","singletop_tW_bstar18","singletop_tWB_bstar16","singletop_tWB_bstar17","singletop_tWB_bstar18","SIGNAME_16","SIGNAME_17","SIGNAME_18"],
+	    "PROCESSES": ["ttbar_bstar16","ttbar_bstar17","ttbar_bstar18","ttbar-semilep_bstar17","ttbar-semilep_bstar18","singletop_tW_bstar16","singletop_tW_bstar17","singletop_tW_bstar18","singletop_tWB_bstar16","singletop_tWB_bstar17","singletop_tWB_bstar18","SIGNAME16","SIGNAME17","SIGNAME18"],
 	    "BINNING": "default"
 	},
 	"Fail": {
-            "PROCESSES": ["ttbar_bstar16","ttbar_bstar17","ttbar_bstar18","ttbar-semilep_bstar17","ttbar-semilep_bstar18","singletop_tW_bstar16","singletop_tW_bstar17","singletop_tW_bstar18","singletop_tWB_bstar16","singletop_tWB_bstar17","singletop_tWB_bstar18","SIGNAME_16","SIGNAME_17","SIGNAME_18"],
+            "PROCESSES": ["ttbar_bstar16","ttbar_bstar17","ttbar_bstar18","ttbar-semilep_bstar17","ttbar-semilep_bstar18","singletop_tW_bstar16","singletop_tW_bstar17","singletop_tW_bstar18","singletop_tWB_bstar16","singletop_tWB_bstar17","singletop_tWB_bstar18","SIGNAME16","SIGNAME17","SIGNAME18"],
             "BINNING": "default"
 	}
     },
@@ -32,7 +32,7 @@
 	    "ALIAS": "Run2_data",
 	    "LOC": "path/FILE:HIST"
 	},
-	"SIGNAME_16": {
+	"SIGNAME16": {
 	    "SYSTEMATICS":["lumi"],
 	    "SCALE": 1.0, 
 	    "COLOR": 1, 
@@ -40,7 +40,7 @@
 	    "TITLE": "b*_{LH} (2.4 TeV)",
 	    "LOC": "path/FILE:HIST"
 	},
-        "SIGNAME_17": {
+        "SIGNAME17": {
 	    "SYSTEMATICS":["lumi"],
 	    "SCALE": 1.0, 
 	    "COLOR": 1, 
@@ -48,7 +48,7 @@
 	    "TITLE": "b*_{LH} (2.4 TeV)",
 	    "LOC": "path/FILE:HIST"
 	},
-        "SIGNAME_18": {
+        "SIGNAME18": {
 	    "SYSTEMATICS":["lumi"],
 	    "SCALE": 1.0, 
 	    "COLOR": 1, 
