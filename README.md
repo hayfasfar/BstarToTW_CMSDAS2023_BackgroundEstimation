@@ -72,7 +72,7 @@ source twoD-env/bin/activate
 Then you should be good to go!
 
 ## Background estimate
-For this exercise we will use the [`2DAlphabet`](https://github.com/lcorcodilos/2DAlphabet/tree/refactor) github package. This package uses `.json` configuration files to specify the input histograms (to perform the fit) and the uncertainties. These uncertainties will be used inside of the `Higgs Combine` backend, the fitting package used widely within CMS. The 2DAlphabet package serves as a nice interface with Combine to allow the user to use the 2DAlphabet method without having to create their own custom version of combine. 
+For this exercise we will use the [`2DAlphabet`](https://github.com/ammitra/2DAlphabet) github package. This package uses `.json` configuration files to specify the input histograms (to perform the fit) and the uncertainties. These uncertainties will be used inside of the `Higgs Combine` backend, the fitting package used widely within CMS. The 2DAlphabet package serves as a nice interface with Combine to allow the user to use the 2DAlphabet method without having to create their own custom version of combine. 
 
 # Configuration file
 
