@@ -9,25 +9,27 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_xyz
 ```
 
-### Setup CMSSW environment:
-Assuming you've already created the `~/nobackup/CMSDAS2022/b2g_exercise/` directory:
+### Setup CMSSW and 2DAlphabet environment:
+Assuming you've already created the `~/nobackup/CMSDAS2023/` directory, first create the CMSSW environment:
 ```
 ssh -XY USERNAME@cmslpc-sl7.fnal.gov
 export SCRAM_ARCH=slc7_amd64_gcc700
-cd nobackup/CMSDAS2022/b2g_exercise/
+cd nobackup/CMSDAS2023/
 cmsrel CMSSW_10_6_14
 cd CMSSW_10_6_14/src
 cmsenv
 ```
 
-### While still in the `CMSSW_10_6_14/src/` directory:
+Now set up 2DAlphabet:
 ```
+cd ~/nobackup/CMSDAS2023/CMSSW_10_6_14/src/
 git clone https://github.com/ammitra/2DAlphabet.git
 git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
 curl -s https://raw.githubusercontent.com/lcorcodilos/CombineHarvester/master/CombineTools/scripts/sparse-checkout-ssh.sh | bash
 scram b clean; scram b -j 4
 cmsenv
 ```
+
 Now, create a virtual environment in which to install 2DAlphabet:
 ```
 python -m virtualenv twoD-env
@@ -36,7 +38,7 @@ cd 2DAlphabet
 python setup.py develop
 ```
 
-Then, check that the installation worked by opening a python shell:
+Then, check that the 2DAlphabet installation worked by opening a python shell:
 ```
 python
 ```
@@ -48,13 +50,14 @@ r = ROOT.RooParametricHist()
 
 ### Finally, clone this repo to the `src` directory as well:
 ```
-git clone https://github.com/ammitra/BstarToTW_CMSDAS2022_BackgroundEstimation.git
+cd ~/nobackup/CMSDAS2023/CMSSW_10_6_14/src/
+git clone https://github.com/ammitra/BstarToTW_CMSDAS2023_BackgroundEstimation.git
 ```
 OR fork the code onto your own personal space and set the upstream:
 ```
-https://github.com/<USERNAME>/BstarToTW_CMSDAS2022_BackgroundEstimation.git
-cd BstarToTW_CMSDAS2022_BackgroundEstimation
-git remote add upstream https://github.com/ammitra/BstarToTW_CMSDAS2022_BackgroundEstimation.git
+https://github.com/<USERNAME>/BstarToTW_CMSDAS2023_BackgroundEstimation.git
+cd BstarToTW_CMSDAS2023_BackgroundEstimation
+git remote add upstream https://github.com/ammitra/BstarToTW_CMSDAS2023_BackgroundEstimation.git
 git remote -v
 ```
 
@@ -62,7 +65,7 @@ git remote -v
 Go back to the directory where you installed 2DAlphabet and where the virtual environment resides:
 ```
 ssh -XY USERNAME@cmslpc-sl7.fnal.gov
-cd nobackup/CMSDAS2022/b2g_exercise/CMSSW_10_6_14/src/
+cd ~/nobackup/CMSDAS2023/CMSSW_10_6_14/src/
 cmsenv
 source twoD-env/bin/activate
 ```
