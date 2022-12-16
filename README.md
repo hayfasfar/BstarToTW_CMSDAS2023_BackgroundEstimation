@@ -14,12 +14,8 @@ cd CMSSW_10_6_14/src
 cmsenv
 ```
 
-### While still in the `src` directory:
+### While still in the `CMSSW_10_6_14/src/` directory:
 ```
-export SCRAM_ARCH=slc7_amd64_gcc700
-cmsrel CMSSW_10_6_14
-cd CMSSW_10_6_14/src
-cmsenv
 git clone https://github.com/ammitra/2DAlphabet.git
 git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
 curl -s https://raw.githubusercontent.com/lcorcodilos/CombineHarvester/master/CombineTools/scripts/sparse-checkout-ssh.sh | bash
