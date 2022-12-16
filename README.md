@@ -3,6 +3,12 @@ Background estimation for the 2022 CMSDAS b*->tW exercise, using the updated ver
 
 ## Getting started (in bash shell)
 
+First, ensure that you have [SSH keys tied to your github account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and that they've been added to the ssh-agent:
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_xyz
+```
+
 ### Setup CMSSW environment:
 Assuming you've already created the `~/nobackup/CMSDAS2022/b2g_exercise/` directory:
 ```
