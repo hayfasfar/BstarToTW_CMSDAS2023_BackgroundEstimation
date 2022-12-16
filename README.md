@@ -16,7 +16,7 @@ cmsenv
 
 ### While still in the `src` directory:
 ```
-git clone https://github.com/lcorcodilos/2DAlphabet.git
+git clone https://github.com/ammitra/2DAlphabet.git
 git clone https://github.com/lcorcodilos/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit/
 curl -s https://raw.githubusercontent.com/lcorcodilos/CombineHarvester/master/CombineTools/scripts/sparse-checkout-ssh.sh | bash
 scram b clean; scram b -j 4
