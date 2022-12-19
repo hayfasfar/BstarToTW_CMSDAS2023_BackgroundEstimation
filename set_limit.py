@@ -287,8 +287,8 @@ if not options.blind:
 else:
     g_mclimit.GetXaxis().SetTitle("m_{b*_{"+cstr+"}} [TeV]")  # NOT GENERIC
     g_mclimit.GetYaxis().SetTitle("#sigma_{b*_{"+cstr+"}} B(b*_{"+cstr+"}#rightarrow tW) (pb)") # NOT GENERIC
-    g_limit.GetXaxis().SetTitleSize(0.055)
-    g_limit.GetYaxis().SetTitleSize(0.05)
+    g_mclimit.GetXaxis().SetTitleSize(0.055)
+    g_mclimit.GetYaxis().SetTitleSize(0.05)
     g_mclimit.Draw("al")
     g_error95.Draw("lf")
     g_error.Draw("lf")
