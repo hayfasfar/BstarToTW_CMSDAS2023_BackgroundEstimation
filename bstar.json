@@ -163,6 +163,7 @@
             "VAL":1.30
         },
         "Tpt-alpha": {
+	    "ALIAS": "TptAlpha",
             "CODE": 2,
 	    "UP": "path/FILE:HIST_UP",
 	    "DOWN": "path/FILE:HIST_DOWN",
@@ -170,6 +171,7 @@
 	    "SIGMA": 1.0
         },
         "Tpt-beta": {
+	    "ALIAS": "TptBeta",
             "CODE": 2,
             "UP": "path/FILE:HIST_UP",
             "DOWN": "path/FILE:HIST_DOWN",
