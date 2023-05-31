@@ -1,5 +1,5 @@
-# BstarToTW_CMSDAS2022_BackgroundEstimation
-Background estimation for the 2022 CMSDAS b*->tW exercise, using the updated version of 2DAlphabet
+# BstarToTW_CMSDAS2023_BackgroundEstimation
+Background estimation for the 2023 CMSDAS $b^\ast \to tW$ exercise, using the updated version of 2DAlphabet
 
 ## Getting started (in bash shell)
 
@@ -8,13 +8,14 @@ First, ensure that you have [SSH keys tied to your github account](https://docs.
 eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_xyz
 ```
+This step is necessary for cloning some of the Combine tools used in the 2DAlphabet installation.
 
 ### Setup CMSSW and 2DAlphabet environment:
-Assuming you've already created the `~/nobackup/CMSDAS2023/` directory, first create the CMSSW environment:
+Assuming you've already created the `~/public/CMSDAS2023/` directory, first create the CMSSW environment:
 ```
-ssh -XY USERNAME@cmslpc-sl7.fnal.gov
+ssh -XY USERNAME@lxplus.cern.ch
 export SCRAM_ARCH=slc7_amd64_gcc700
-cd nobackup/CMSDAS2023/
+cd public/CMSDAS2023/
 cmsrel CMSSW_10_6_14
 cd CMSSW_10_6_14/src
 cmsenv
@@ -22,9 +23,9 @@ cmsenv
 
 Now set up 2DAlphabet:
 ```
-cd ~/nobackup/CMSDAS2023/CMSSW_10_6_14/src/
+cd ~/public/CMSDAS2023/CMSSW_10_6_14/src/
 git clone https://github.com/ammitra/2DAlphabet.git
-git clone https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
+git clone --branch 102x https://github.com/cms-analysis/HiggsAnalysis-CombinedLimit.git HiggsAnalysis/CombinedLimit
 curl -s https://raw.githubusercontent.com/lcorcodilos/CombineHarvester/master/CombineTools/scripts/sparse-checkout-ssh.sh | bash
 scram b clean; scram b -j 4
 cmsenv
@@ -50,7 +51,7 @@ r = ROOT.RooParametricHist()
 
 ### Finally, clone this repo to the `src` directory as well:
 ```
-cd ~/nobackup/CMSDAS2023/CMSSW_10_6_14/src/
+cd ~/public/CMSDAS2023/CMSSW_10_6_14/src/
 git clone https://github.com/ammitra/BstarToTW_CMSDAS2023_BackgroundEstimation.git
 ```
 OR fork the code onto your own personal space and set the upstream:
@@ -61,11 +62,11 @@ git remote add upstream https://github.com/ammitra/BstarToTW_CMSDAS2023_Backgrou
 git remote -v
 ```
 
-## What to do after reconnecting to the LPC:
+## What to do after reconnecting to LXPLUS:
 Go back to the directory where you installed 2DAlphabet and where the virtual environment resides:
 ```
-ssh -XY USERNAME@cmslpc-sl7.fnal.gov
-cd ~/nobackup/CMSDAS2023/CMSSW_10_6_14/src/
+ssh -XY USERNAME@lxplus.cern.ch
+cd ~/public/CMSDAS2023/CMSSW_10_6_14/src/
 cmsenv
 source twoD-env/bin/activate
 ```
