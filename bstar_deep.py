@@ -78,7 +78,7 @@ def make_workspace():
     '''
 
     # open the smooth QCD MC file and gather the pass/fail histograms
-    smooth_MC_file = ROOT.TFile.Open('/uscms_data/d3/lcorcodi/BStar13TeV/CMSSW_10_2_0/src/BStar13TeV/rootfiles/smooth_QCD_run2.root')
+    smooth_MC_file = ROOT.TFile.Open('/eos/user/c/cmsdas/2023/long-ex-b2g/rootfiles/smooth_QCD_run2.root')
     smooth_MC_fail = smooth_MC_file.Get('out_fail_4_5_default_run2__mt_mtw')
     smooth_MC_pass = smooth_MC_file.Get('out_pass_4_5_default_run2__mt_mtw')
     # create the pass fail ratio by dividing the pass histogram by the fail via ROOT

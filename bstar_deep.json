@@ -8,7 +8,8 @@
 	"HIST": "MtwvMt$region",
 	"HIST_UP": "MtwvMt$region$systup",
 	"HIST_DOWN": "MtwvMt$region$systdown",
-	"path": "/uscms/home/ammitra/nobackup/CMSDAS2022/b2g_exercise/new_2d_dir/CMSSW_10_6_14/src/BstarToTW_CMSDAS2022_BackgroundEstimation/bstar_inputs_deep",
+	"pathLPC": "/uscms/home/ammitra/nobackup/CMSDAS2022/b2g_exercise/new_2d_dir/CMSSW_10_6_14/src/BstarToTW_CMSDAS2022_BackgroundEstimation/bstar_inputs_deep",
+	"path": "/eos/user/c/cmsdas/2023/long-ex-b2g/bstar_inputs_deep",
 	"SIGNAME": ["signalLH1400_bstar","signalLH1600_bstar","signalLH1800_bstar","signalLH2000_bstar","signalLH2200_bstar","signalLH2400_bstar","signalLH2600_bstar","signalLH2800_bstar","signalLH3000_bstar","signalLH3200_bstar","signalLH3400_bstar","signalLH3600_bstar","signalLH3800_bstar","signalLH4000_bstar"]
     },
     "REGIONS": {

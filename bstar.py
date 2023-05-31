@@ -78,7 +78,7 @@ def make_workspace():
     '''
 
     # open the smooth QCD MC file and gather the pass/fail histograms
-    smooth_MC_file = ROOT.TFile.Open('/uscms_data/d3/lcorcodi/BStar13TeV/CMSSW_10_2_0/src/BStar13TeV/rootfiles/smooth_QCD_run2.root')
+    smooth_MC_file = ROOT.TFile.Open('/eos/user/c/cmsdas/2023/long-ex-b2g/rootfiles/smooth_QCD_run2.root')
     smooth_MC_fail = smooth_MC_file.Get('out_fail_4_5_default_run2__mt_mtw')
     smooth_MC_pass = smooth_MC_file.Get('out_pass_4_5_default_run2__mt_mtw')
     # create the pass fail ratio by dividing the pass histogram by the fail via ROOT
@@ -217,9 +217,13 @@ def perform_limit(signal):
         )
 
 if __name__ == "__main__":
+    # Generate the 2DAlphabet workspace - this must be run once,
+    # but need not be re-run after initial workspace creation 
+    # unless you have changed something in the JSON config file.
     make_workspace()
 
+    # Signal masses can be appended to this list
     for sig in ['2400']:
-        ML_fit(sig)
-        plot_fit(sig)
-        perform_limit(sig)
+        ML_fit(sig)		# Perform the maximum likelihood fit for a given signal mass
+        plot_fit(sig)		# Plot the postfit results, includinng nuisance pulls and 1D projections
+        #perform_limit(sig)	# Calculate the limit
