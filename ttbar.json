@@ -1,0 +1,87 @@
+{
+    "NAME": "ttbar",
+    "GLOBAL": {
+	"FILE": "TTbarAllHad$process.root",
+	"FILE_UP": "TTbarAllHad$process_$syst_up.root",
+	"FILE_DOWN": "TTbarAllHad$process_$syst_down.root",
+	"HIST": "MttvsMt$region",
+	"HIST_UP": "MttvsMt$region$systup",
+	"HIST_DOWN": "MttvsMt$region$systdown",
+	"path": "/afs/cern.ch/user/m/mmorris/public/ttbarAllHad/twodalphabet",
+	"SIGNAME": ["signalRSGluon2000"]
+    },
+    "REGIONS": {
+	"Pass": {
+	    "PROCESSES": ["16_SIGNAME","16_TTbar"],
+	    "BINNING": "default"
+	},
+	"Fail": {
+            "PROCESSES": ["16_SIGNAME","16_TTbar"],
+            "BINNING": "default"
+	}
+    },
+    "PROCESSES": {
+	"data_obs": {
+	    "SYSTEMATICS": [],
+	    "SCALE": 1.0,
+	    "COLOR": 1,
+	    "TYPE": "DATA",
+	    "TITLE": "Data",
+	    "HELP": "since the data file is not called TTbarAllHaddata_obs.root, we make an alias to the real name - shown below",
+	    "ALIAS": "16_Data",
+	    "LOC": "path/FILE:HIST"
+	},
+	"16_SIGNAME": {
+	    "SYSTEMATICS":["lumi"],
+	    "SCALE": 1.0, 
+	    "COLOR": 1, 
+	    "TYPE": "SIGNAL",
+	    "TITLE": "g_{RS} (3 TeV)",
+	    "LOC": "path/FILE:HIST"
+	},
+        "16_TTbar": {
+            "SYSTEMATICS": ["lumi","ttbar_xsec"],
+            "SCALE": 1.0,
+            "COLOR": 2,
+            "TYPE": "BKG",
+            "TITLE": "t#bar{t}",
+            "LOC": "path/FILE:HIST"
+        }
+    },
+    "SYSTEMATICS": {
+	"lumi": {
+	    "CODE": 0,
+	    "VAL": 1.018
+	},
+	"ttbar_xsec": {
+	    "CODE": 0,
+	    "VAL": 1.20
+	}
+    },
+    "BINNING": {
+	"default": {
+	    "X": {
+		"NAME": "jetmass",
+		"TITLE": "m_{T} [GeV]",
+		"BINS":[0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340],
+		"SIGSTART": 120,
+		"SIGEND": 220
+	    },
+	    "Y": {
+		"NAME": "resmass",
+		"TITLE": "m_{t#bar{t}} [GeV]",
+		"BINS": [800, 1160, 1520, 1880, 2240, 2600, 2960, 3320]
+	    }
+	}
+    },
+    "OPTIONS": {
+	"blindedPlots": [],
+	"blindedFit": [],
+        "plotPrefitSigInFitB": true,
+	"plotUncerts": false,
+	"plotTitles": false,
+	"plotTemplateComparisons": false,
+	"plotEvtsPerUnit": true,
+	"year": 2
+    }
+}
