@@ -2,61 +2,94 @@
     "NAME": "ttbar",
     "GLOBAL": {
 	"FILE": "TTbarAllHad$process.root",
-	"FILE_UP": "TTbarAllHad$category$process_$syst_up.root",
-	"FILE_DOWN": "TTbarAllHad$category$process_$syst_down.root",
-	"HIST": "MttvsMt$category$region",
-	"HIST_UP": "MttvsMt$category$region$systup",
-	"HIST_DOWN": "MttvsMt$category$region$systdown",
+	"FILE_UP": "TTbarAllHad$process_$syst_up.root",
+	"FILE_DOWN": "TTbarAllHad$process_$syst_down.root",
+	"HIST": "MttvsMt$region",
+	"HIST_UP": "MttvsMt$region$systup",
+	"HIST_DOWN": "MttvsMt$region$systdown",
 	"path": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles",
 	"SIGNAME": ["signalRSGluon2000", "signalRSGluon2500"]
     },
     "REGIONS": {
-	"Pass": {
-	    "PROCESSES": ["16_SIGNAME","16_TTbar"],
-	    "BINNING": "default"
-        },
-	"Fail": {
+        "cen2bPass": {
             "PROCESSES": ["16_SIGNAME","16_TTbar"],
             "BINNING": "default"
-        }
-    },
-    "CATEGORIES": {
-	"0bcen": {
-	    "PROCESSES": ["16_SIGNAME","16_TTbar"],
-	    "BINNING": "default"
-        },
-	"fwd2b": {
+            },
+        "cen2bFail": {
+                "PROCESSES": ["16_SIGNAME","16_TTbar"],
+                "BINNING": "default"
+            },
+        "cen1bPass": {
             "PROCESSES": ["16_SIGNAME","16_TTbar"],
             "BINNING": "default"
-        }
+            },
+        "cen1bFail": {
+                "PROCESSES": ["16_SIGNAME","16_TTbar"],
+                "BINNING": "default"
+            },
+        "cen0bPass": {
+            "PROCESSES": ["16_SIGNAME","16_TTbar"],
+            "BINNING": "default"
+            },
+        "cen0bFail": {
+                "PROCESSES": ["16_SIGNAME","16_TTbar"],
+                "BINNING": "default"
+            },
+        "fwd2bPass": {
+            "PROCESSES": ["16_SIGNAME","16_TTbar"],
+            "BINNING": "default"
+            },
+        "fwd2bFail": {
+                "PROCESSES": ["16_SIGNAME","16_TTbar"],
+                "BINNING": "default"
+            },
+        "fwd1bPass": {
+            "PROCESSES": ["16_SIGNAME","16_TTbar"],
+            "BINNING": "default"
+            },
+        "fwd1bFail": {
+                "PROCESSES": ["16_SIGNAME","16_TTbar"],
+                "BINNING": "default"
+            },
+        "fwd0bPass": {
+            "PROCESSES": ["16_SIGNAME","16_TTbar"],
+            "BINNING": "default"
+            },
+        "fwd0bFail": {
+                "PROCESSES": ["16_SIGNAME","16_TTbar"],
+                "BINNING": "default"
+            }
     },
     "PROCESSES": {
-	"data_obs": {
-	    "SYSTEMATICS": [],
-	    "SCALE": 1.0,
-	    "COLOR": 1,
-	    "TYPE": "DATA",
-	    "TITLE": "Data",
-	    "LOC": "path/FILE:HIST"
+        "data_obs": {
+                "SYSTEMATICS": [],
+                "SCALE": 1.0,
+                "COLOR": 1,
+                "TYPE": "DATA",
+                "TITLE": "Data",
+                "HELP": "since the data file is not called TTbarAllHaddata_obs.root, we make an alias to the real name - shown below",
+                "ALIAS": "16_Data",
+                "LOC": "path/FILE:HIST"
+            },
+        "16_SIGNAME": {
+                "SYSTEMATICS":["lumi", "pileup", "pdf", "jes", "jer"],
+                "SCALE": 1.0, 
+                "COLOR": 1, 
+                "TYPE": "SIGNAL",
+                "TITLE": "g_{RS} (3 TeV)",
+                "LOC": "path/FILE:HIST"
+            },
+            "16_TTbar": {
+                "SYSTEMATICS": ["lumi","ttbar_xsec", "pileup", "pdf", "jes", "jer"],
+                "SCALE": 1.0,
+                "COLOR": 2,
+                "TYPE": "BKG",
+                "TITLE": "t#bar{t}",
+                "LOC": "path/FILE:HIST"
+            }
+        
         },
-	"16_SIGNAME": {
-	    "SYSTEMATICS":["lumi", "pileup", "pdf", "jes", "jer"],
-	    "SCALE": 1.0, 
-	    "COLOR": 1, 
-	    "TYPE": "SIGNAL",
-	    "TITLE": "g_{RS} (2 TeV)",
-	    "LOC": "path/FILE:HIST"
-        },
-    "16_TTbar": {
-        "SYSTEMATICS": ["lumi","ttbar_xsec", "pileup", "pdf", "jes", "jer"],
-        "SCALE": 1.0,
-        "COLOR": 2,
-        "TYPE": "BKG",
-        "TITLE": "t#bar{t}",
-        "LOC": "path/FILE:HIST"
-        }
-    },
-    "SYSTEMATICS": {
+     "SYSTEMATICS": {
         "lumi": {
             "CODE": 0,
             "VAL": 1.018
@@ -98,11 +131,12 @@
 	    "SIGMA": 1.0
         }
      },
+
     "BINNING": {
 	"default": {
 	    "X": {
 		"NAME": "jetmass",
-		"TITLE": "m_{t} [GeV]",
+		"TITLE": "m_{T} [GeV]",
 		"BINS":[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475],
 		"SIGSTART": 125,
 		"SIGEND": 225

@@ -121,9 +121,6 @@ def make_workspace():
         # The Binning object is needed for constructing the Alphabet objects.
         # If one wanted to be very robust, they could get the binning for `p` as well and check 
         # that the binning is consistent between the two.
-        
-        print('regions', p, f)
-        
         binning_f, _ = twoD.GetBinningFor(f)
         
         # Next we construct the Alphabet objects which all inherit from the Generic2D class.
@@ -142,18 +139,18 @@ def make_workspace():
         # Next we'll book a constant transfer function to transfer from Fail -> Pass
         qcd_rpf = ParametricFunction(
                         fail_name.replace('Fail','rpf'),
-                        binning_f, _rpf_options['0x0']['form'],
-                        constraints= _rpf_options['0x0']['constraints']
+                        binning_f, _rpf_options['1x0']['form'],
+                        constraints= _rpf_options['1x0']['constraints']
                    )
 
         # We add it to `twoD` so its included when making the RooWorkspace and ledger.
         # We specify the name of the process, the region it lives in, and the object itself.
         # The process is assumed to be a background and colored yellow but this can be changed
         # with optional arguments.
-        twoD.AddAlphaObj('QCD',f,qcd_f, cat,title='QCD')
+        twoD.AddAlphaObj('QCD',f,qcd_f,title='QCD')
 
         qcd_p = qcd_f.Multiply(fail_name.replace('Fail','Pass'), qcd_rpf)
-        twoD.AddAlphaObj('QCD', p, qcd_p, cat, title='QCD')
+        twoD.AddAlphaObj('QCD', p, qcd_p, title='QCD')
 
     # save the workspace!
     twoD.Save()

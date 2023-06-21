@@ -1,0 +1,1376 @@
+Doing GLOBAL variable replacement in input json...
+('filename', '/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad16_Data.root')
+('histname', 'MttvsMtcen2bPass')
+Making workspace...
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_HIGH_pileupUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::jetmass_HIGH_default
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::resmass_default
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_SIG_pileupUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::jetmass_SIG_default
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_LOW_pileupUp
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::jetmass_LOW_default
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_HIGH_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_SIG_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_LOW_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_HIGH_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_SIG_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_LOW_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_HIGH_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_SIG_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_LOW_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_HIGH_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_SIG_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_LOW_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_HIGH_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_SIG_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_LOW_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_HIGH_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_SIG_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_LOW_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_HIGH_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_SIG_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_LOW_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_HIGH
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_SIG
+Making RooDataHist... 16_signalRSGluon2000_cen2bPass_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bPass_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bPass_LOW
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_HIGH_pileupUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_SIG_pileupUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_LOW_pileupUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_HIGH_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_SIG_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_LOW_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_HIGH_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_SIG_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_LOW_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_HIGH_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_SIG_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_LOW_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_HIGH_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_SIG_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_LOW_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_HIGH_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_SIG_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_LOW_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_HIGH_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_SIG_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_LOW_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_HIGH_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_SIG_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_LOW_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_HIGH
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_SIG
+Making RooDataHist... 16_signalRSGluon2000_cen0bPass_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bPass_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bPass_LOW
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_HIGH_pileupUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_SIG_pileupUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_LOW_pileupUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_HIGH_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_SIG_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_LOW_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_HIGH_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_SIG_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_LOW_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_HIGH_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_SIG_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_LOW_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_HIGH_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_SIG_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_LOW_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_HIGH_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_SIG_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_LOW_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_HIGH_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_SIG_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_LOW_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_HIGH_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_SIG_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_LOW_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_HIGH
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_SIG
+Making RooDataHist... 16_signalRSGluon2000_cen0bFail_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen0bFail_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen0bFail_LOW
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_HIGH_pileupUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_SIG_pileupUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_LOW_pileupUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_HIGH_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_SIG_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_LOW_pileupDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_HIGH_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_SIG_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_LOW_pdfUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_HIGH_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_SIG_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_LOW_pdfDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_HIGH_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_SIG_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_LOW_jesUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_HIGH_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_SIG_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_LOW_jesDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_HIGH_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_SIG_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_LOW_jerUp
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_HIGH_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_SIG_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_LOW_jerDown
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_HIGH
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_SIG
+Making RooDataHist... 16_signalRSGluon2000_cen2bFail_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2000_cen2bFail_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2000_cen2bFail_LOW
+Making RooDataHist... 16_TTbar_cen2bPass_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_HIGH_pileupUp
+Making RooDataHist... 16_TTbar_cen2bPass_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_SIG_pileupUp
+Making RooDataHist... 16_TTbar_cen2bPass_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_LOW_pileupUp
+Making RooDataHist... 16_TTbar_cen2bPass_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_HIGH_pileupDown
+Making RooDataHist... 16_TTbar_cen2bPass_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_SIG_pileupDown
+Making RooDataHist... 16_TTbar_cen2bPass_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_LOW_pileupDown
+Making RooDataHist... 16_TTbar_cen2bPass_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_HIGH_pdfUp
+Making RooDataHist... 16_TTbar_cen2bPass_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_SIG_pdfUp
+Making RooDataHist... 16_TTbar_cen2bPass_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_LOW_pdfUp
+Making RooDataHist... 16_TTbar_cen2bPass_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_HIGH_pdfDown
+Making RooDataHist... 16_TTbar_cen2bPass_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_SIG_pdfDown
+Making RooDataHist... 16_TTbar_cen2bPass_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_LOW_pdfDown
+Making RooDataHist... 16_TTbar_cen2bPass_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_HIGH_jesUp
+Making RooDataHist... 16_TTbar_cen2bPass_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_SIG_jesUp
+Making RooDataHist... 16_TTbar_cen2bPass_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_LOW_jesUp
+Making RooDataHist... 16_TTbar_cen2bPass_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_HIGH_jesDown
+Making RooDataHist... 16_TTbar_cen2bPass_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_SIG_jesDown
+Making RooDataHist... 16_TTbar_cen2bPass_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_LOW_jesDown
+Making RooDataHist... 16_TTbar_cen2bPass_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_HIGH_jerUp
+Making RooDataHist... 16_TTbar_cen2bPass_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_SIG_jerUp
+Making RooDataHist... 16_TTbar_cen2bPass_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_LOW_jerUp
+Making RooDataHist... 16_TTbar_cen2bPass_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_HIGH_jerDown
+Making RooDataHist... 16_TTbar_cen2bPass_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_SIG_jerDown
+Making RooDataHist... 16_TTbar_cen2bPass_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_LOW_jerDown
+Making RooDataHist... 16_TTbar_cen2bPass_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_HIGH
+Making RooDataHist... 16_TTbar_cen2bPass_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_SIG
+Making RooDataHist... 16_TTbar_cen2bPass_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bPass_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bPass_LOW
+Making RooDataHist... 16_TTbar_cen0bPass_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_HIGH_pileupUp
+Making RooDataHist... 16_TTbar_cen0bPass_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_SIG_pileupUp
+Making RooDataHist... 16_TTbar_cen0bPass_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_LOW_pileupUp
+Making RooDataHist... 16_TTbar_cen0bPass_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_HIGH_pileupDown
+Making RooDataHist... 16_TTbar_cen0bPass_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_SIG_pileupDown
+Making RooDataHist... 16_TTbar_cen0bPass_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_LOW_pileupDown
+Making RooDataHist... 16_TTbar_cen0bPass_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_HIGH_pdfUp
+Making RooDataHist... 16_TTbar_cen0bPass_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_SIG_pdfUp
+Making RooDataHist... 16_TTbar_cen0bPass_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_LOW_pdfUp
+Making RooDataHist... 16_TTbar_cen0bPass_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_HIGH_pdfDown
+Making RooDataHist... 16_TTbar_cen0bPass_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_SIG_pdfDown
+Making RooDataHist... 16_TTbar_cen0bPass_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_LOW_pdfDown
+Making RooDataHist... 16_TTbar_cen0bPass_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_HIGH_jesUp
+Making RooDataHist... 16_TTbar_cen0bPass_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_SIG_jesUp
+Making RooDataHist... 16_TTbar_cen0bPass_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_LOW_jesUp
+Making RooDataHist... 16_TTbar_cen0bPass_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_HIGH_jesDown
+Making RooDataHist... 16_TTbar_cen0bPass_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_SIG_jesDown
+Making RooDataHist... 16_TTbar_cen0bPass_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_LOW_jesDown
+Making RooDataHist... 16_TTbar_cen0bPass_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_HIGH_jerUp
+Making RooDataHist... 16_TTbar_cen0bPass_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_SIG_jerUp
+Making RooDataHist... 16_TTbar_cen0bPass_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_LOW_jerUp
+Making RooDataHist... 16_TTbar_cen0bPass_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_HIGH_jerDown
+Making RooDataHist... 16_TTbar_cen0bPass_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_SIG_jerDown
+Making RooDataHist... 16_TTbar_cen0bPass_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_LOW_jerDown
+Making RooDataHist... 16_TTbar_cen0bPass_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_HIGH
+Making RooDataHist... 16_TTbar_cen0bPass_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_SIG
+Making RooDataHist... 16_TTbar_cen0bPass_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bPass_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bPass_LOW
+Making RooDataHist... 16_TTbar_cen0bFail_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_HIGH_pileupUp
+Making RooDataHist... 16_TTbar_cen0bFail_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_SIG_pileupUp
+Making RooDataHist... 16_TTbar_cen0bFail_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_LOW_pileupUp
+Making RooDataHist... 16_TTbar_cen0bFail_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_HIGH_pileupDown
+Making RooDataHist... 16_TTbar_cen0bFail_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_SIG_pileupDown
+Making RooDataHist... 16_TTbar_cen0bFail_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_LOW_pileupDown
+Making RooDataHist... 16_TTbar_cen0bFail_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_HIGH_pdfUp
+Making RooDataHist... 16_TTbar_cen0bFail_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_SIG_pdfUp
+Making RooDataHist... 16_TTbar_cen0bFail_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_LOW_pdfUp
+Making RooDataHist... 16_TTbar_cen0bFail_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_HIGH_pdfDown
+Making RooDataHist... 16_TTbar_cen0bFail_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_SIG_pdfDown
+Making RooDataHist... 16_TTbar_cen0bFail_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_LOW_pdfDown
+Making RooDataHist... 16_TTbar_cen0bFail_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_HIGH_jesUp
+Making RooDataHist... 16_TTbar_cen0bFail_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_SIG_jesUp
+Making RooDataHist... 16_TTbar_cen0bFail_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_LOW_jesUp
+Making RooDataHist... 16_TTbar_cen0bFail_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_HIGH_jesDown
+Making RooDataHist... 16_TTbar_cen0bFail_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_SIG_jesDown
+Making RooDataHist... 16_TTbar_cen0bFail_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_LOW_jesDown
+Making RooDataHist... 16_TTbar_cen0bFail_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_HIGH_jerUp
+Making RooDataHist... 16_TTbar_cen0bFail_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_SIG_jerUp
+Making RooDataHist... 16_TTbar_cen0bFail_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_LOW_jerUp
+Making RooDataHist... 16_TTbar_cen0bFail_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_HIGH_jerDown
+Making RooDataHist... 16_TTbar_cen0bFail_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_SIG_jerDown
+Making RooDataHist... 16_TTbar_cen0bFail_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_LOW_jerDown
+Making RooDataHist... 16_TTbar_cen0bFail_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_HIGH
+Making RooDataHist... 16_TTbar_cen0bFail_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_SIG
+Making RooDataHist... 16_TTbar_cen0bFail_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen0bFail_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen0bFail_LOW
+Making RooDataHist... 16_TTbar_cen2bFail_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_HIGH_pileupUp
+Making RooDataHist... 16_TTbar_cen2bFail_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_SIG_pileupUp
+Making RooDataHist... 16_TTbar_cen2bFail_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_LOW_pileupUp
+Making RooDataHist... 16_TTbar_cen2bFail_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_HIGH_pileupDown
+Making RooDataHist... 16_TTbar_cen2bFail_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_SIG_pileupDown
+Making RooDataHist... 16_TTbar_cen2bFail_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_LOW_pileupDown
+Making RooDataHist... 16_TTbar_cen2bFail_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_HIGH_pdfUp
+Making RooDataHist... 16_TTbar_cen2bFail_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_SIG_pdfUp
+Making RooDataHist... 16_TTbar_cen2bFail_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_LOW_pdfUp
+Making RooDataHist... 16_TTbar_cen2bFail_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_HIGH_pdfDown
+Making RooDataHist... 16_TTbar_cen2bFail_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_SIG_pdfDown
+Making RooDataHist... 16_TTbar_cen2bFail_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_LOW_pdfDown
+Making RooDataHist... 16_TTbar_cen2bFail_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_HIGH_jesUp
+Making RooDataHist... 16_TTbar_cen2bFail_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_SIG_jesUp
+Making RooDataHist... 16_TTbar_cen2bFail_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_LOW_jesUp
+Making RooDataHist... 16_TTbar_cen2bFail_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_HIGH_jesDown
+Making RooDataHist... 16_TTbar_cen2bFail_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_SIG_jesDown
+Making RooDataHist... 16_TTbar_cen2bFail_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_LOW_jesDown
+Making RooDataHist... 16_TTbar_cen2bFail_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_HIGH_jerUp
+Making RooDataHist... 16_TTbar_cen2bFail_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_SIG_jerUp
+Making RooDataHist... 16_TTbar_cen2bFail_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_LOW_jerUp
+Making RooDataHist... 16_TTbar_cen2bFail_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_HIGH_jerDown
+Making RooDataHist... 16_TTbar_cen2bFail_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_SIG_jerDown
+Making RooDataHist... 16_TTbar_cen2bFail_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_LOW_jerDown
+Making RooDataHist... 16_TTbar_cen2bFail_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_HIGH
+Making RooDataHist... 16_TTbar_cen2bFail_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_SIG
+Making RooDataHist... 16_TTbar_cen2bFail_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_TTbar_cen2bFail_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_TTbar_cen2bFail_LOW
+Making RooDataHist... data_obs_cen2bPass_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bPass_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bPass_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen2bPass_HIGH
+Making RooDataHist... data_obs_cen2bPass_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bPass_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bPass_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen2bPass_SIG
+Making RooDataHist... data_obs_cen2bPass_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bPass_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bPass_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen2bPass_LOW
+Making RooDataHist... data_obs_cen0bPass_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bPass_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bPass_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen0bPass_HIGH
+Making RooDataHist... data_obs_cen0bPass_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bPass_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bPass_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen0bPass_SIG
+Making RooDataHist... data_obs_cen0bPass_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bPass_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bPass_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen0bPass_LOW
+Making RooDataHist... data_obs_cen0bFail_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bFail_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bFail_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen0bFail_HIGH
+Making RooDataHist... data_obs_cen0bFail_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bFail_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bFail_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen0bFail_SIG
+Making RooDataHist... data_obs_cen0bFail_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bFail_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen0bFail_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen0bFail_LOW
+Making RooDataHist... data_obs_cen2bFail_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bFail_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bFail_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen2bFail_HIGH
+Making RooDataHist... data_obs_cen2bFail_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bFail_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bFail_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen2bFail_SIG
+Making RooDataHist... data_obs_cen2bFail_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bFail_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(data_obs_cen2bFail_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset data_obs_cen2bFail_LOW
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_HIGH_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_SIG_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_LOW_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_HIGH_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_SIG_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_LOW_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_HIGH_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_SIG_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_LOW_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_HIGH_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_SIG_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_LOW_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_HIGH_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_SIG_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_LOW_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_HIGH_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_SIG_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_LOW_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_HIGH_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_SIG_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_LOW_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_HIGH_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_SIG_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_LOW_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_HIGH
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_SIG
+Making RooDataHist... 16_signalRSGluon2500_cen2bPass_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bPass_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bPass_LOW
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_HIGH_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_SIG_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_LOW_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_HIGH_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_SIG_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_LOW_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_HIGH_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_SIG_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_LOW_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_HIGH_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_SIG_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_LOW_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_HIGH_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_SIG_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_LOW_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_HIGH_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_SIG_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_LOW_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_HIGH_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_SIG_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_LOW_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_HIGH_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_SIG_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_LOW_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_HIGH
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_SIG
+Making RooDataHist... 16_signalRSGluon2500_cen0bPass_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bPass_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bPass_LOW
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_HIGH_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_SIG_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_LOW_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_HIGH_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_SIG_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_LOW_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_HIGH_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_SIG_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_LOW_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_HIGH_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_SIG_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_LOW_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_HIGH_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_SIG_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_LOW_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_HIGH_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_SIG_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_LOW_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_HIGH_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_SIG_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_LOW_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_HIGH_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_SIG_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_LOW_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_HIGH
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_SIG
+Making RooDataHist... 16_signalRSGluon2500_cen0bFail_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen0bFail_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen0bFail_LOW
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_HIGH_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_pileupUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_HIGH_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_SIG_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_pileupUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_SIG_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_LOW_pileupUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_pileupUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_pileupUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_LOW_pileupUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_HIGH_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_pileupDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_HIGH_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_SIG_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_pileupDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_SIG_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_LOW_pileupDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_pileupDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_pileupDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_LOW_pileupDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_HIGH_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_pdfUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_HIGH_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_SIG_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_pdfUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_SIG_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_LOW_pdfUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_pdfUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_pdfUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_LOW_pdfUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_HIGH_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_pdfDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_HIGH_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_SIG_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_pdfDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_SIG_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_LOW_pdfDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_pdfDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_pdfDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_LOW_pdfDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_HIGH_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_jesUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_HIGH_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_SIG_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_jesUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_SIG_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_LOW_jesUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_jesUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_jesUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_LOW_jesUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_HIGH_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_jesDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_HIGH_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_SIG_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_jesDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_SIG_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_LOW_jesDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_jesDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_jesDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_LOW_jesDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_HIGH_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_jerUp): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_HIGH_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_SIG_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_jerUp): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_SIG_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_LOW_jerUp
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_jerUp): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_jerUp): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_LOW_jerUp
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_HIGH_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_jerDown): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_HIGH_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_SIG_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_jerDown): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_SIG_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_LOW_jerDown
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_jerDown): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW_jerDown): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_LOW_jerDown
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_HIGH
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH): fit range of variable jetmass_HIGH_default expanded to nearest bin boundaries: [225,475] --> [225,475]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_HIGH): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_HIGH
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_SIG
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG): fit range of variable jetmass_SIG_default expanded to nearest bin boundaries: [125,225] --> [125,225]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_SIG): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_SIG
+Making RooDataHist... 16_signalRSGluon2500_cen2bFail_LOW
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW): fit range of variable jetmass_LOW_default expanded to nearest bin boundaries: [0,125] --> [0,125]
+[#1] INFO:DataHandling -- RooDataHist::adjustBinning(16_signalRSGluon2500_cen2bFail_LOW): fit range of variable resmass_default expanded to nearest bin boundaries: [800,3680] --> [800,3680]
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset 16_signalRSGluon2500_cen2bFail_LOW
+Adding RooParametricHist... QCD_cen2bFail_HIGH
+Adding RooParametricHist... QCD_cen2bFail_SIG
+Adding RooParametricHist... QCD_cen2bFail_LOW
+Adding RooParametricHist norm... QCD_cen2bFail_HIGH_norm
+Adding RooParametricHist norm... QCD_cen2bFail_SIG_norm
+Adding RooParametricHist norm... QCD_cen2bFail_LOW_norm
+Adding RooParametricHist... QCD_cen2bPass_HIGH
+Adding RooParametricHist... QCD_cen2bPass_SIG
+Adding RooParametricHist... QCD_cen2bPass_LOW
+Adding RooParametricHist norm... QCD_cen2bPass_HIGH_norm
+Adding RooParametricHist norm... QCD_cen2bPass_SIG_norm
+Adding RooParametricHist norm... QCD_cen2bPass_LOW_norm
+Adding RooParametricHist... QCD_cen0bFail_HIGH
+Adding RooParametricHist... QCD_cen0bFail_SIG
+Adding RooParametricHist... QCD_cen0bFail_LOW
+Adding RooParametricHist norm... QCD_cen0bFail_HIGH_norm
+Adding RooParametricHist norm... QCD_cen0bFail_SIG_norm
+Adding RooParametricHist norm... QCD_cen0bFail_LOW_norm
+Adding RooParametricHist... QCD_cen0bPass_HIGH
+Adding RooParametricHist... QCD_cen0bPass_SIG
+Adding RooParametricHist... QCD_cen0bPass_LOW
+Adding RooParametricHist norm... QCD_cen0bPass_HIGH_norm
+Adding RooParametricHist norm... QCD_cen0bPass_SIG_norm
+Adding RooParametricHist norm... QCD_cen0bPass_LOW_norm

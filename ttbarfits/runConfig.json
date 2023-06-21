@@ -27,7 +27,7 @@
         "NAME": "jetmass", 
         "SIGEND": 225, 
         "SIGSTART": 125, 
-        "TITLE": "m_{t} [GeV]"
+        "TITLE": "m_{T} [GeV]"
       }, 
       "Y": {
         "BINS": [
@@ -83,7 +83,7 @@
         "jes", 
         "jer"
       ], 
-      "TITLE": "g_{RS} (2 TeV)", 
+      "TITLE": "g_{RS} (3 TeV)", 
       "TYPE": "SIGNAL", 
       "VARIATION": "nominal"
     }, 
@@ -105,7 +105,9 @@
       "VARIATION": "nominal"
     }, 
     "data_obs": {
+      "ALIAS": "16_Data", 
       "COLOR": 1, 
+      "HELP": "since the data file is not called TTbarAllHaddata_obs.root, we make an alias to the real name - shown below", 
       "LOC": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region", 
       "NAME": "data_obs", 
       "SCALE": 1.0, 
@@ -116,14 +118,84 @@
     }
   }, 
   "REGIONS": {
-    "Fail": {
+    "cen0bFail": {
       "BINNING": "default", 
       "PROCESSES": [
         "16_SIGNAME", 
         "16_TTbar"
       ]
     }, 
-    "Pass": {
+    "cen0bPass": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "cen1bFail": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "cen1bPass": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "cen2bFail": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "cen2bPass": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "fwd0bFail": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "fwd0bPass": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "fwd1bFail": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "fwd1bPass": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "fwd2bFail": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "fwd2bPass": {
       "BINNING": "default", 
       "PROCESSES": [
         "16_SIGNAME", 
