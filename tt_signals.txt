@@ -1,0 +1,4 @@
+ttbarfits/ttbar-RSG2000_area, ttbarfits/ttbar-RSG2000_area
+2000, 2500
+1.0, 1.0
+1.0, 1.0

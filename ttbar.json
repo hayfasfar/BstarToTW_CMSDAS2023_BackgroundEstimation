@@ -2,23 +2,33 @@
     "NAME": "ttbar",
     "GLOBAL": {
 	"FILE": "TTbarAllHad$process.root",
-	"FILE_UP": "TTbarAllHad$process_$syst_up.root",
-	"FILE_DOWN": "TTbarAllHad$process_$syst_down.root",
-	"HIST": "MttvsMt$region",
-	"HIST_UP": "MttvsMt$region$systup",
-	"HIST_DOWN": "MttvsMt$region$systdown",
-	"path": "/afs/cern.ch/user/m/mmorris/public/ttbarAllHad/twodalphabet",
-	"SIGNAME": ["signalRSGluon2000"]
+	"FILE_UP": "TTbarAllHad$category$process_$syst_up.root",
+	"FILE_DOWN": "TTbarAllHad$category$process_$syst_down.root",
+	"HIST": "MttvsMt$category$region",
+	"HIST_UP": "MttvsMt$category$region$systup",
+	"HIST_DOWN": "MttvsMt$category$region$systdown",
+	"path": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles",
+	"SIGNAME": ["signalRSGluon2000", "signalRSGluon2500"]
     },
     "REGIONS": {
 	"Pass": {
 	    "PROCESSES": ["16_SIGNAME","16_TTbar"],
 	    "BINNING": "default"
-	},
+        },
 	"Fail": {
             "PROCESSES": ["16_SIGNAME","16_TTbar"],
             "BINNING": "default"
-	}
+        }
+    },
+    "CATEGORIES": {
+	"0bcen": {
+	    "PROCESSES": ["16_SIGNAME","16_TTbar"],
+	    "BINNING": "default"
+        },
+	"fwd2b": {
+            "PROCESSES": ["16_SIGNAME","16_TTbar"],
+            "BINNING": "default"
+        }
     },
     "PROCESSES": {
 	"data_obs": {
@@ -27,50 +37,80 @@
 	    "COLOR": 1,
 	    "TYPE": "DATA",
 	    "TITLE": "Data",
-	    "HELP": "since the data file is not called TTbarAllHaddata_obs.root, we make an alias to the real name - shown below",
-	    "ALIAS": "16_Data",
 	    "LOC": "path/FILE:HIST"
-	},
+        },
 	"16_SIGNAME": {
-	    "SYSTEMATICS":["lumi"],
+	    "SYSTEMATICS":["lumi", "pileup", "pdf", "jes", "jer"],
 	    "SCALE": 1.0, 
 	    "COLOR": 1, 
 	    "TYPE": "SIGNAL",
-	    "TITLE": "g_{RS} (3 TeV)",
+	    "TITLE": "g_{RS} (2 TeV)",
 	    "LOC": "path/FILE:HIST"
-	},
-        "16_TTbar": {
-            "SYSTEMATICS": ["lumi","ttbar_xsec"],
-            "SCALE": 1.0,
-            "COLOR": 2,
-            "TYPE": "BKG",
-            "TITLE": "t#bar{t}",
-            "LOC": "path/FILE:HIST"
+        },
+    "16_TTbar": {
+        "SYSTEMATICS": ["lumi","ttbar_xsec", "pileup", "pdf", "jes", "jer"],
+        "SCALE": 1.0,
+        "COLOR": 2,
+        "TYPE": "BKG",
+        "TITLE": "t#bar{t}",
+        "LOC": "path/FILE:HIST"
         }
     },
     "SYSTEMATICS": {
-	"lumi": {
-	    "CODE": 0,
-	    "VAL": 1.018
-	},
-	"ttbar_xsec": {
-	    "CODE": 0,
-	    "VAL": 1.20
-	}
-    },
+        "lumi": {
+            "CODE": 0,
+            "VAL": 1.018
+        },
+        "ttbar_xsec": {
+            "CODE": 0,
+            "VAL": 1.20
+        },
+        "pileup": {
+	    "ALIAS": "PILEUP",
+            "CODE": 2,
+	    "UP": "path/FILE:HIST_UP",
+	    "DOWN": "path/FILE:HIST_DOWN",
+            "SCALE": 1.0,
+	    "SIGMA": 1.0
+        },
+        "pdf": {
+	    "ALIAS": "PDF",
+            "CODE": 2,
+	    "UP": "path/FILE:HIST_UP",
+	    "DOWN": "path/FILE:HIST_DOWN",
+            "SCALE": 1.0,
+	    "SIGMA": 1.0
+        },
+        "jes": {
+	    "ALIAS": "JES",
+            "CODE": 2,
+	    "UP": "path/FILE:HIST_UP",
+	    "DOWN": "path/FILE:HIST_DOWN",
+            "SCALE": 1.0,
+	    "SIGMA": 1.0
+        },
+        "jer": {
+	    "ALIAS": "JER",
+            "CODE": 2,
+	    "UP": "path/FILE:HIST_UP",
+	    "DOWN": "path/FILE:HIST_DOWN",
+            "SCALE": 1.0,
+	    "SIGMA": 1.0
+        }
+     },
     "BINNING": {
 	"default": {
 	    "X": {
 		"NAME": "jetmass",
-		"TITLE": "m_{T} [GeV]",
-		"BINS":[0, 20, 40, 60, 80, 100, 120, 140, 160, 180, 200, 220, 240, 260, 280, 300, 320, 340],
-		"SIGSTART": 120,
-		"SIGEND": 220
+		"TITLE": "m_{t} [GeV]",
+		"BINS":[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475],
+		"SIGSTART": 125,
+		"SIGEND": 225
 	    },
 	    "Y": {
 		"NAME": "resmass",
 		"TITLE": "m_{t#bar{t}} [GeV]",
-		"BINS": [800, 1160, 1520, 1880, 2240, 2600, 2960, 3320]
+		"BINS": [800, 1160, 1520, 1880, 2240, 2600, 2960, 3320, 3680]
 	    }
 	}
     },

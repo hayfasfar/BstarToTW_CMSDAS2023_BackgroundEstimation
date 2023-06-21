@@ -1,0 +1,9 @@
+,process,region,process_type,title
+0,data_obs,Fail,DATA,Data
+1,16_TTbar,Fail,BKG,t#bar{t}
+2,QCD,Fail,BKG,QCD
+3,TotalBkg,Fail,TOTAL,TotalBkg
+4,data_obs,Pass,DATA,Data
+5,16_TTbar,Pass,BKG,t#bar{t}
+6,QCD,Pass,BKG,QCD
+7,TotalBkg,Pass,TOTAL,TotalBkg

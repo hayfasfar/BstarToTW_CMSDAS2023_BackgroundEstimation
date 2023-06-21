@@ -1,0 +1,176 @@
+{
+  "BINNING": {
+    "default": {
+      "X": {
+        "BINS": [
+          0, 
+          25, 
+          50, 
+          75, 
+          100, 
+          125, 
+          150, 
+          175, 
+          200, 
+          225, 
+          250, 
+          275, 
+          300, 
+          325, 
+          350, 
+          375, 
+          400, 
+          425, 
+          450, 
+          475
+        ], 
+        "NAME": "jetmass", 
+        "SIGEND": 225, 
+        "SIGSTART": 125, 
+        "TITLE": "m_{t} [GeV]"
+      }, 
+      "Y": {
+        "BINS": [
+          800, 
+          1160, 
+          1520, 
+          1880, 
+          2240, 
+          2600, 
+          2960, 
+          3320, 
+          3680
+        ], 
+        "NAME": "resmass", 
+        "TITLE": "m_{t#bar{t}} [GeV]"
+      }
+    }
+  }, 
+  "GLOBAL": {
+    "FILE": "TTbarAllHad$process.root", 
+    "FILE_DOWN": "TTbarAllHad$process_$syst_down.root", 
+    "FILE_UP": "TTbarAllHad$process_$syst_up.root", 
+    "HIST": "MttvsMt$region", 
+    "HIST_DOWN": "MttvsMt$region$systdown", 
+    "HIST_UP": "MttvsMt$region$systup", 
+    "SIGNAME": [
+      "signalRSGluon2000", 
+      "signalRSGluon2500"
+    ], 
+    "path": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles"
+  }, 
+  "NAME": "ttbar", 
+  "OPTIONS": {
+    "blindedFit": [], 
+    "blindedPlots": [], 
+    "plotEvtsPerUnit": true, 
+    "plotPrefitSigInFitB": true, 
+    "plotTemplateComparisons": false, 
+    "plotTitles": false, 
+    "plotUncerts": false, 
+    "year": 2
+  }, 
+  "PROCESSES": {
+    "16_SIGNAME": {
+      "COLOR": 1, 
+      "LOC": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region", 
+      "NAME": "16_SIGNAME", 
+      "SCALE": 1.0, 
+      "SYSTEMATICS": [
+        "lumi", 
+        "pileup", 
+        "pdf", 
+        "jes", 
+        "jer"
+      ], 
+      "TITLE": "g_{RS} (2 TeV)", 
+      "TYPE": "SIGNAL", 
+      "VARIATION": "nominal"
+    }, 
+    "16_TTbar": {
+      "COLOR": 2, 
+      "LOC": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region", 
+      "NAME": "16_TTbar", 
+      "SCALE": 1.0, 
+      "SYSTEMATICS": [
+        "lumi", 
+        "ttbar_xsec", 
+        "pileup", 
+        "pdf", 
+        "jes", 
+        "jer"
+      ], 
+      "TITLE": "t#bar{t}", 
+      "TYPE": "BKG", 
+      "VARIATION": "nominal"
+    }, 
+    "data_obs": {
+      "COLOR": 1, 
+      "LOC": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region", 
+      "NAME": "data_obs", 
+      "SCALE": 1.0, 
+      "SYSTEMATICS": [], 
+      "TITLE": "Data", 
+      "TYPE": "DATA", 
+      "VARIATION": "nominal"
+    }
+  }, 
+  "REGIONS": {
+    "Fail": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }, 
+    "Pass": {
+      "BINNING": "default", 
+      "PROCESSES": [
+        "16_SIGNAME", 
+        "16_TTbar"
+      ]
+    }
+  }, 
+  "SYSTEMATICS": {
+    "jer": {
+      "ALIAS": "JER", 
+      "CODE": 2, 
+      "DOWN": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region$systdown", 
+      "SCALE": 1.0, 
+      "SIGMA": 1.0, 
+      "UP": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region$systup"
+    }, 
+    "jes": {
+      "ALIAS": "JES", 
+      "CODE": 2, 
+      "DOWN": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region$systdown", 
+      "SCALE": 1.0, 
+      "SIGMA": 1.0, 
+      "UP": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region$systup"
+    }, 
+    "lumi": {
+      "CODE": 0, 
+      "VAL": 1.018
+    }, 
+    "pdf": {
+      "ALIAS": "PDF", 
+      "CODE": 2, 
+      "DOWN": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region$systdown", 
+      "SCALE": 1.0, 
+      "SIGMA": 1.0, 
+      "UP": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region$systup"
+    }, 
+    "pileup": {
+      "ALIAS": "PILEUP", 
+      "CODE": 2, 
+      "DOWN": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region$systdown", 
+      "SCALE": 1.0, 
+      "SIGMA": 1.0, 
+      "UP": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/TTbarAllHad$process.root:MttvsMt$region$systup"
+    }, 
+    "ttbar_xsec": {
+      "CODE": 0, 
+      "VAL": 1.2
+    }
+  }
+}

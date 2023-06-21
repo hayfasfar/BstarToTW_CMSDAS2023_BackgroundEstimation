@@ -1,0 +1,32 @@
+ <<< Combine >>> 
+>>> random number generator seed is 123456
+   Options for Robust Minimizer :: 
+        Tolerance  0.1
+        Strategy   0
+        Type,Algo  Minuit2,Migrad
+>>> method used is FitDiagnostics
+Set Default Value of Parameter r To : 1
+>>> 0 out of 6 channels masked
+
+SimNLL created with 0 channels, 0 generic constraints, 6 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+SimNLL created with 6 channels, 0 generic constraints, 6 fast gaussian constraints, 0 fast poisson constraints, 0 fast group constraints, 
+  [WARNING] Found [QCD_Fail_HIGH_bin_10-2] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_6-1] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_7-1] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_8-1] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_9-1] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_9-2] at boundary. 
+  [WARNING] Found [QCD_rpf_par4] at boundary. 
+  [WARNING] Found [QCD_rpf_par5] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_10-2] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_6-1] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_7-1] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_8-1] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_9-1] at boundary. 
+  [WARNING] Found [QCD_Fail_HIGH_bin_9-2] at boundary. 
+  [WARNING] Found [QCD_rpf_par4] at boundary. 
+  [WARNING] Found [QCD_rpf_par5] at boundary. 
+
+ --- FitDiagnostics ---
+Best fit r: 1.50895  -0.322158/+0.327745  (68% CL)
+Done in 0.12 min (cpu), 0.18 min (real)

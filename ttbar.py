@@ -121,6 +121,9 @@ def make_workspace():
         # The Binning object is needed for constructing the Alphabet objects.
         # If one wanted to be very robust, they could get the binning for `p` as well and check 
         # that the binning is consistent between the two.
+        
+        print('regions', p, f)
+        
         binning_f, _ = twoD.GetBinningFor(f)
         
         # Next we construct the Alphabet objects which all inherit from the Generic2D class.
@@ -139,18 +142,18 @@ def make_workspace():
         # Next we'll book a constant transfer function to transfer from Fail -> Pass
         qcd_rpf = ParametricFunction(
                         fail_name.replace('Fail','rpf'),
-                        binning_f, _rpf_options['1x1']['form'],
-                        constraints= _rpf_options['1x1']['constraints']
+                        binning_f, _rpf_options['0x0']['form'],
+                        constraints= _rpf_options['0x0']['constraints']
                    )
 
         # We add it to `twoD` so its included when making the RooWorkspace and ledger.
         # We specify the name of the process, the region it lives in, and the object itself.
         # The process is assumed to be a background and colored yellow but this can be changed
         # with optional arguments.
-        twoD.AddAlphaObj('QCD',f,qcd_f,title='QCD')
+        twoD.AddAlphaObj('QCD',f,qcd_f, cat,title='QCD')
 
         qcd_p = qcd_f.Multiply(fail_name.replace('Fail','Pass'), qcd_rpf)
-        twoD.AddAlphaObj('QCD', p, qcd_p, title='QCD')
+        twoD.AddAlphaObj('QCD', p, qcd_p, cat, title='QCD')
 
     # save the workspace!
     twoD.Save()
@@ -196,7 +199,7 @@ def plot_fit(signal):
     '''
     Plots the fits from ML_fit() using 2DAlphabet
     '''
-    twoD = TwoDAlphabet('ttbarfits', 'bstar.json', loadPrevious=True)
+    twoD = TwoDAlphabet('ttbarfits', 'ttbar.json', loadPrevious=True)
     subset = twoD.ledger.select(_select_signal, 'signalLH{}'.format(signal))
     twoD.StdPlots('ttbar-RSG{}_area'.format(signal), subset)
 
@@ -208,7 +211,7 @@ def perform_limit(signal):
     something reasonable to create the Asimov toy.
     '''
     # Returns a dictionary of the TF parameters with the names as keys and the post-fit values as dict values.
-    twoD = TwoDAlphabet('ttbarfits', 'bstar.json', loadPrevious=True)
+    twoD = TwoDAlphabet('ttbarfits', 'ttbar.json', loadPrevious=True)
 
     # GetParamsOnMatch() opens up the workspace's fitDiagnosticsTest.root and selects the rratio for the background
     params_to_set = twoD.GetParamsOnMatch('rratio*', 'ttbar-RSG{}_area'.format(signal), 'b')

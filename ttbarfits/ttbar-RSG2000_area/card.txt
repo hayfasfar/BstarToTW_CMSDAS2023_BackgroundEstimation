@@ -1,0 +1,351 @@
+imax 6
+jmax 2
+kmax 6
+------------------------------------------------------------------------------------------------------------------------
+shapes  16_TTbar             Fail_LOW ../base.root w:16_TTbar_Fail_LOW w:16_TTbar_Fail_LOW_$SYSTEMATIC
+shapes  16_TTbar             Fail_SIG ../base.root w:16_TTbar_Fail_SIG w:16_TTbar_Fail_SIG_$SYSTEMATIC
+shapes  16_TTbar             Fail_HIGH ../base.root w:16_TTbar_Fail_HIGH w:16_TTbar_Fail_HIGH_$SYSTEMATIC
+shapes  16_TTbar             Pass_LOW ../base.root w:16_TTbar_Pass_LOW w:16_TTbar_Pass_LOW_$SYSTEMATIC
+shapes  16_TTbar             Pass_SIG ../base.root w:16_TTbar_Pass_SIG w:16_TTbar_Pass_SIG_$SYSTEMATIC
+shapes  16_TTbar             Pass_HIGH ../base.root w:16_TTbar_Pass_HIGH w:16_TTbar_Pass_HIGH_$SYSTEMATIC
+shapes  16_signalRSGluon2000 Fail_LOW ../base.root w:16_signalRSGluon2000_Fail_LOW w:16_signalRSGluon2000_Fail_LOW_$SYSTEMATIC
+shapes  16_signalRSGluon2000 Fail_SIG ../base.root w:16_signalRSGluon2000_Fail_SIG w:16_signalRSGluon2000_Fail_SIG_$SYSTEMATIC
+shapes  16_signalRSGluon2000 Fail_HIGH ../base.root w:16_signalRSGluon2000_Fail_HIGH w:16_signalRSGluon2000_Fail_HIGH_$SYSTEMATIC
+shapes  16_signalRSGluon2000 Pass_LOW ../base.root w:16_signalRSGluon2000_Pass_LOW w:16_signalRSGluon2000_Pass_LOW_$SYSTEMATIC
+shapes  16_signalRSGluon2000 Pass_SIG ../base.root w:16_signalRSGluon2000_Pass_SIG w:16_signalRSGluon2000_Pass_SIG_$SYSTEMATIC
+shapes  16_signalRSGluon2000 Pass_HIGH ../base.root w:16_signalRSGluon2000_Pass_HIGH w:16_signalRSGluon2000_Pass_HIGH_$SYSTEMATIC
+shapes  data_obs             Fail_LOW ../base.root w:data_obs_Fail_LOW
+shapes  data_obs             Fail_SIG ../base.root w:data_obs_Fail_SIG
+shapes  data_obs             Fail_HIGH ../base.root w:data_obs_Fail_HIGH
+shapes  data_obs             Pass_LOW ../base.root w:data_obs_Pass_LOW
+shapes  data_obs             Pass_SIG ../base.root w:data_obs_Pass_SIG
+shapes  data_obs             Pass_HIGH ../base.root w:data_obs_Pass_HIGH
+shapes  QCD                  Fail_LOW ../base.root w:QCD_Fail_LOW
+shapes  QCD                  Fail_SIG ../base.root w:QCD_Fail_SIG
+shapes  QCD                  Fail_HIGH ../base.root w:QCD_Fail_HIGH
+shapes  QCD                  Pass_LOW ../base.root w:QCD_Pass_LOW
+shapes  QCD                  Pass_SIG ../base.root w:QCD_Pass_SIG
+shapes  QCD                  Pass_HIGH ../base.root w:QCD_Pass_HIGH
+------------------------------------------------------------------------------------------------------------------------
+bin                 Fail_LOW             Fail_SIG             Fail_HIGH            Pass_LOW             Pass_SIG             Pass_HIGH           
+observation                   -1                   -1                   -1                   -1                   -1                   -1
+------------------------------------------------------------------------------------------------------------------------
+bin                                      Fail_LOW             Fail_SIG             Fail_HIGH            Pass_LOW             Pass_SIG             Pass_HIGH            Fail_LOW             Fail_SIG             Fail_HIGH            Pass_LOW             Pass_SIG             Pass_HIGH            Fail_LOW             Fail_SIG             Fail_HIGH            Pass_LOW             Pass_SIG             Pass_HIGH            
+process                                  16_TTbar             16_TTbar             16_TTbar             16_TTbar             16_TTbar             16_TTbar             16_signalRSGluon2000 16_signalRSGluon2000 16_signalRSGluon2000 16_signalRSGluon2000 16_signalRSGluon2000 16_signalRSGluon2000 QCD                  QCD                  QCD                  QCD                  QCD                  QCD                  
+process                                                     1                    1                    1                    1                    1                    1                    0                    0                    0                    0                    0                    0                    2                    2                    2                    2                    2                    2 
+rate                                     -1                   -1                   -1                   -1                   -1                   -1                   -1                   -1                   -1                   -1                   -1                   -1                   1                    1                    1                    1                    1                    1                    
+------------------------------------------------------------------------------------------------------------------------
+jer                  shapes                                1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0 -                    -                    -                    -                    -                    -                    
+jes                  shapes                                1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0 -                    -                    -                    -                    -                    -                    
+lumi                 lnN                                 1.018                1.018                1.018                1.018                1.018                1.018                1.018                1.018                1.018                1.018                1.018                1.018 -                    -                    -                    -                    -                    -                    
+pdf                  shapes                                1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0 -                    -                    -                    -                    -                    -                    
+pileup               shapes                                1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0                  1.0 -                    -                    -                    -                    -                    -                    
+ttbar_xsec           lnN                                   1.2                  1.2                  1.2                  1.2                  1.2                  1.2 -                    -                    -                    -                    -                    -                    -                    -                    -                    -                    -                    -                    
+QCD_Fail_LOW_bin_1-1                     flatParam
+QCD_Fail_LOW_bin_2-1                     flatParam
+QCD_Fail_LOW_bin_3-1                     flatParam
+QCD_Fail_LOW_bin_4-1                     flatParam
+QCD_Fail_LOW_bin_5-1                     flatParam
+QCD_Fail_LOW_bin_1-2                     flatParam
+QCD_Fail_LOW_bin_2-2                     flatParam
+QCD_Fail_LOW_bin_3-2                     flatParam
+QCD_Fail_LOW_bin_4-2                     flatParam
+QCD_Fail_LOW_bin_5-2                     flatParam
+QCD_Fail_LOW_bin_1-3                     flatParam
+QCD_Fail_LOW_bin_2-3                     flatParam
+QCD_Fail_LOW_bin_3-3                     flatParam
+QCD_Fail_LOW_bin_4-3                     flatParam
+QCD_Fail_LOW_bin_5-3                     flatParam
+QCD_Fail_LOW_bin_1-4                     flatParam
+QCD_Fail_LOW_bin_2-4                     flatParam
+QCD_Fail_LOW_bin_3-4                     flatParam
+QCD_Fail_LOW_bin_4-4                     flatParam
+QCD_Fail_LOW_bin_5-4                     flatParam
+QCD_Fail_LOW_bin_1-5                     flatParam
+QCD_Fail_LOW_bin_2-5                     flatParam
+QCD_Fail_LOW_bin_3-5                     flatParam
+QCD_Fail_LOW_bin_4-5                     flatParam
+QCD_Fail_LOW_bin_5-5                     flatParam
+QCD_Fail_LOW_bin_1-6                     flatParam
+QCD_Fail_LOW_bin_2-6                     flatParam
+QCD_Fail_LOW_bin_3-6                     flatParam
+QCD_Fail_LOW_bin_4-6                     flatParam
+QCD_Fail_LOW_bin_5-6                     flatParam
+QCD_Fail_LOW_bin_1-7                     flatParam
+QCD_Fail_LOW_bin_2-7                     flatParam
+QCD_Fail_LOW_bin_3-7                     flatParam
+QCD_Fail_LOW_bin_4-7                     flatParam
+QCD_Fail_LOW_bin_5-7                     flatParam
+QCD_Fail_LOW_bin_1-8                     flatParam
+QCD_Fail_LOW_bin_2-8                     flatParam
+QCD_Fail_LOW_bin_3-8                     flatParam
+QCD_Fail_LOW_bin_4-8                     flatParam
+QCD_Fail_LOW_bin_5-8                     flatParam
+QCD_Fail_SIG_bin_1-1                     flatParam
+QCD_Fail_SIG_bin_2-1                     flatParam
+QCD_Fail_SIG_bin_3-1                     flatParam
+QCD_Fail_SIG_bin_4-1                     flatParam
+QCD_Fail_SIG_bin_1-2                     flatParam
+QCD_Fail_SIG_bin_2-2                     flatParam
+QCD_Fail_SIG_bin_3-2                     flatParam
+QCD_Fail_SIG_bin_4-2                     flatParam
+QCD_Fail_SIG_bin_1-3                     flatParam
+QCD_Fail_SIG_bin_2-3                     flatParam
+QCD_Fail_SIG_bin_3-3                     flatParam
+QCD_Fail_SIG_bin_4-3                     flatParam
+QCD_Fail_SIG_bin_1-4                     flatParam
+QCD_Fail_SIG_bin_2-4                     flatParam
+QCD_Fail_SIG_bin_3-4                     flatParam
+QCD_Fail_SIG_bin_4-4                     flatParam
+QCD_Fail_SIG_bin_1-5                     flatParam
+QCD_Fail_SIG_bin_2-5                     flatParam
+QCD_Fail_SIG_bin_3-5                     flatParam
+QCD_Fail_SIG_bin_4-5                     flatParam
+QCD_Fail_SIG_bin_1-6                     flatParam
+QCD_Fail_SIG_bin_2-6                     flatParam
+QCD_Fail_SIG_bin_3-6                     flatParam
+QCD_Fail_SIG_bin_4-6                     flatParam
+QCD_Fail_SIG_bin_1-7                     flatParam
+QCD_Fail_SIG_bin_2-7                     flatParam
+QCD_Fail_SIG_bin_3-7                     flatParam
+QCD_Fail_SIG_bin_4-7                     flatParam
+QCD_Fail_SIG_bin_1-8                     flatParam
+QCD_Fail_SIG_bin_2-8                     flatParam
+QCD_Fail_SIG_bin_3-8                     flatParam
+QCD_Fail_SIG_bin_4-8                     flatParam
+QCD_Fail_HIGH_bin_1-1                    flatParam
+QCD_Fail_HIGH_bin_2-1                    flatParam
+QCD_Fail_HIGH_bin_3-1                    flatParam
+QCD_Fail_HIGH_bin_4-1                    flatParam
+QCD_Fail_HIGH_bin_5-1                    flatParam
+QCD_Fail_HIGH_bin_6-1                    flatParam
+QCD_Fail_HIGH_bin_7-1                    flatParam
+QCD_Fail_HIGH_bin_8-1                    flatParam
+QCD_Fail_HIGH_bin_9-1                    flatParam
+QCD_Fail_HIGH_bin_1-2                    flatParam
+QCD_Fail_HIGH_bin_2-2                    flatParam
+QCD_Fail_HIGH_bin_3-2                    flatParam
+QCD_Fail_HIGH_bin_4-2                    flatParam
+QCD_Fail_HIGH_bin_5-2                    flatParam
+QCD_Fail_HIGH_bin_6-2                    flatParam
+QCD_Fail_HIGH_bin_7-2                    flatParam
+QCD_Fail_HIGH_bin_8-2                    flatParam
+QCD_Fail_HIGH_bin_9-2                    flatParam
+QCD_Fail_HIGH_bin_10-2                   flatParam
+QCD_Fail_HIGH_bin_1-3                    flatParam
+QCD_Fail_HIGH_bin_2-3                    flatParam
+QCD_Fail_HIGH_bin_3-3                    flatParam
+QCD_Fail_HIGH_bin_4-3                    flatParam
+QCD_Fail_HIGH_bin_5-3                    flatParam
+QCD_Fail_HIGH_bin_6-3                    flatParam
+QCD_Fail_HIGH_bin_7-3                    flatParam
+QCD_Fail_HIGH_bin_8-3                    flatParam
+QCD_Fail_HIGH_bin_9-3                    flatParam
+QCD_Fail_HIGH_bin_10-3                   flatParam
+QCD_Fail_HIGH_bin_1-4                    flatParam
+QCD_Fail_HIGH_bin_2-4                    flatParam
+QCD_Fail_HIGH_bin_3-4                    flatParam
+QCD_Fail_HIGH_bin_4-4                    flatParam
+QCD_Fail_HIGH_bin_5-4                    flatParam
+QCD_Fail_HIGH_bin_6-4                    flatParam
+QCD_Fail_HIGH_bin_7-4                    flatParam
+QCD_Fail_HIGH_bin_8-4                    flatParam
+QCD_Fail_HIGH_bin_9-4                    flatParam
+QCD_Fail_HIGH_bin_10-4                   flatParam
+QCD_Fail_HIGH_bin_1-5                    flatParam
+QCD_Fail_HIGH_bin_2-5                    flatParam
+QCD_Fail_HIGH_bin_3-5                    flatParam
+QCD_Fail_HIGH_bin_4-5                    flatParam
+QCD_Fail_HIGH_bin_5-5                    flatParam
+QCD_Fail_HIGH_bin_6-5                    flatParam
+QCD_Fail_HIGH_bin_7-5                    flatParam
+QCD_Fail_HIGH_bin_8-5                    flatParam
+QCD_Fail_HIGH_bin_9-5                    flatParam
+QCD_Fail_HIGH_bin_10-5                   flatParam
+QCD_Fail_HIGH_bin_1-6                    flatParam
+QCD_Fail_HIGH_bin_2-6                    flatParam
+QCD_Fail_HIGH_bin_3-6                    flatParam
+QCD_Fail_HIGH_bin_4-6                    flatParam
+QCD_Fail_HIGH_bin_5-6                    flatParam
+QCD_Fail_HIGH_bin_6-6                    flatParam
+QCD_Fail_HIGH_bin_7-6                    flatParam
+QCD_Fail_HIGH_bin_8-6                    flatParam
+QCD_Fail_HIGH_bin_9-6                    flatParam
+QCD_Fail_HIGH_bin_10-6                   flatParam
+QCD_Fail_HIGH_bin_1-7                    flatParam
+QCD_Fail_HIGH_bin_2-7                    flatParam
+QCD_Fail_HIGH_bin_3-7                    flatParam
+QCD_Fail_HIGH_bin_4-7                    flatParam
+QCD_Fail_HIGH_bin_5-7                    flatParam
+QCD_Fail_HIGH_bin_6-7                    flatParam
+QCD_Fail_HIGH_bin_7-7                    flatParam
+QCD_Fail_HIGH_bin_8-7                    flatParam
+QCD_Fail_HIGH_bin_9-7                    flatParam
+QCD_Fail_HIGH_bin_10-7                   flatParam
+QCD_Fail_HIGH_bin_1-8                    flatParam
+QCD_Fail_HIGH_bin_2-8                    flatParam
+QCD_Fail_HIGH_bin_3-8                    flatParam
+QCD_Fail_HIGH_bin_4-8                    flatParam
+QCD_Fail_HIGH_bin_5-8                    flatParam
+QCD_Fail_HIGH_bin_6-8                    flatParam
+QCD_Fail_HIGH_bin_7-8                    flatParam
+QCD_Fail_HIGH_bin_8-8                    flatParam
+QCD_Fail_HIGH_bin_9-8                    flatParam
+QCD_Fail_HIGH_bin_10-8                   flatParam
+QCD_Fail_LOW_bin_1-1                     flatParam
+QCD_Fail_LOW_bin_2-1                     flatParam
+QCD_Fail_LOW_bin_3-1                     flatParam
+QCD_Fail_LOW_bin_4-1                     flatParam
+QCD_Fail_LOW_bin_5-1                     flatParam
+QCD_Fail_LOW_bin_1-2                     flatParam
+QCD_Fail_LOW_bin_2-2                     flatParam
+QCD_Fail_LOW_bin_3-2                     flatParam
+QCD_Fail_LOW_bin_4-2                     flatParam
+QCD_Fail_LOW_bin_5-2                     flatParam
+QCD_Fail_LOW_bin_1-3                     flatParam
+QCD_Fail_LOW_bin_2-3                     flatParam
+QCD_Fail_LOW_bin_3-3                     flatParam
+QCD_Fail_LOW_bin_4-3                     flatParam
+QCD_Fail_LOW_bin_5-3                     flatParam
+QCD_Fail_LOW_bin_1-4                     flatParam
+QCD_Fail_LOW_bin_2-4                     flatParam
+QCD_Fail_LOW_bin_3-4                     flatParam
+QCD_Fail_LOW_bin_4-4                     flatParam
+QCD_Fail_LOW_bin_5-4                     flatParam
+QCD_Fail_LOW_bin_1-5                     flatParam
+QCD_Fail_LOW_bin_2-5                     flatParam
+QCD_Fail_LOW_bin_3-5                     flatParam
+QCD_Fail_LOW_bin_4-5                     flatParam
+QCD_Fail_LOW_bin_5-5                     flatParam
+QCD_Fail_LOW_bin_1-6                     flatParam
+QCD_Fail_LOW_bin_2-6                     flatParam
+QCD_Fail_LOW_bin_3-6                     flatParam
+QCD_Fail_LOW_bin_4-6                     flatParam
+QCD_Fail_LOW_bin_5-6                     flatParam
+QCD_Fail_LOW_bin_1-7                     flatParam
+QCD_Fail_LOW_bin_2-7                     flatParam
+QCD_Fail_LOW_bin_3-7                     flatParam
+QCD_Fail_LOW_bin_4-7                     flatParam
+QCD_Fail_LOW_bin_5-7                     flatParam
+QCD_Fail_LOW_bin_1-8                     flatParam
+QCD_Fail_LOW_bin_2-8                     flatParam
+QCD_Fail_LOW_bin_3-8                     flatParam
+QCD_Fail_LOW_bin_4-8                     flatParam
+QCD_Fail_LOW_bin_5-8                     flatParam
+QCD_Fail_SIG_bin_1-1                     flatParam
+QCD_Fail_SIG_bin_2-1                     flatParam
+QCD_Fail_SIG_bin_3-1                     flatParam
+QCD_Fail_SIG_bin_4-1                     flatParam
+QCD_Fail_SIG_bin_1-2                     flatParam
+QCD_Fail_SIG_bin_2-2                     flatParam
+QCD_Fail_SIG_bin_3-2                     flatParam
+QCD_Fail_SIG_bin_4-2                     flatParam
+QCD_Fail_SIG_bin_1-3                     flatParam
+QCD_Fail_SIG_bin_2-3                     flatParam
+QCD_Fail_SIG_bin_3-3                     flatParam
+QCD_Fail_SIG_bin_4-3                     flatParam
+QCD_Fail_SIG_bin_1-4                     flatParam
+QCD_Fail_SIG_bin_2-4                     flatParam
+QCD_Fail_SIG_bin_3-4                     flatParam
+QCD_Fail_SIG_bin_4-4                     flatParam
+QCD_Fail_SIG_bin_1-5                     flatParam
+QCD_Fail_SIG_bin_2-5                     flatParam
+QCD_Fail_SIG_bin_3-5                     flatParam
+QCD_Fail_SIG_bin_4-5                     flatParam
+QCD_Fail_SIG_bin_1-6                     flatParam
+QCD_Fail_SIG_bin_2-6                     flatParam
+QCD_Fail_SIG_bin_3-6                     flatParam
+QCD_Fail_SIG_bin_4-6                     flatParam
+QCD_Fail_SIG_bin_1-7                     flatParam
+QCD_Fail_SIG_bin_2-7                     flatParam
+QCD_Fail_SIG_bin_3-7                     flatParam
+QCD_Fail_SIG_bin_4-7                     flatParam
+QCD_Fail_SIG_bin_1-8                     flatParam
+QCD_Fail_SIG_bin_2-8                     flatParam
+QCD_Fail_SIG_bin_3-8                     flatParam
+QCD_Fail_SIG_bin_4-8                     flatParam
+QCD_Fail_HIGH_bin_1-1                    flatParam
+QCD_Fail_HIGH_bin_2-1                    flatParam
+QCD_Fail_HIGH_bin_3-1                    flatParam
+QCD_Fail_HIGH_bin_4-1                    flatParam
+QCD_Fail_HIGH_bin_5-1                    flatParam
+QCD_Fail_HIGH_bin_6-1                    flatParam
+QCD_Fail_HIGH_bin_7-1                    flatParam
+QCD_Fail_HIGH_bin_8-1                    flatParam
+QCD_Fail_HIGH_bin_9-1                    flatParam
+QCD_Fail_HIGH_bin_1-2                    flatParam
+QCD_Fail_HIGH_bin_2-2                    flatParam
+QCD_Fail_HIGH_bin_3-2                    flatParam
+QCD_Fail_HIGH_bin_4-2                    flatParam
+QCD_Fail_HIGH_bin_5-2                    flatParam
+QCD_Fail_HIGH_bin_6-2                    flatParam
+QCD_Fail_HIGH_bin_7-2                    flatParam
+QCD_Fail_HIGH_bin_8-2                    flatParam
+QCD_Fail_HIGH_bin_9-2                    flatParam
+QCD_Fail_HIGH_bin_10-2                   flatParam
+QCD_Fail_HIGH_bin_1-3                    flatParam
+QCD_Fail_HIGH_bin_2-3                    flatParam
+QCD_Fail_HIGH_bin_3-3                    flatParam
+QCD_Fail_HIGH_bin_4-3                    flatParam
+QCD_Fail_HIGH_bin_5-3                    flatParam
+QCD_Fail_HIGH_bin_6-3                    flatParam
+QCD_Fail_HIGH_bin_7-3                    flatParam
+QCD_Fail_HIGH_bin_8-3                    flatParam
+QCD_Fail_HIGH_bin_9-3                    flatParam
+QCD_Fail_HIGH_bin_10-3                   flatParam
+QCD_Fail_HIGH_bin_1-4                    flatParam
+QCD_Fail_HIGH_bin_2-4                    flatParam
+QCD_Fail_HIGH_bin_3-4                    flatParam
+QCD_Fail_HIGH_bin_4-4                    flatParam
+QCD_Fail_HIGH_bin_5-4                    flatParam
+QCD_Fail_HIGH_bin_6-4                    flatParam
+QCD_Fail_HIGH_bin_7-4                    flatParam
+QCD_Fail_HIGH_bin_8-4                    flatParam
+QCD_Fail_HIGH_bin_9-4                    flatParam
+QCD_Fail_HIGH_bin_10-4                   flatParam
+QCD_Fail_HIGH_bin_1-5                    flatParam
+QCD_Fail_HIGH_bin_2-5                    flatParam
+QCD_Fail_HIGH_bin_3-5                    flatParam
+QCD_Fail_HIGH_bin_4-5                    flatParam
+QCD_Fail_HIGH_bin_5-5                    flatParam
+QCD_Fail_HIGH_bin_6-5                    flatParam
+QCD_Fail_HIGH_bin_7-5                    flatParam
+QCD_Fail_HIGH_bin_8-5                    flatParam
+QCD_Fail_HIGH_bin_9-5                    flatParam
+QCD_Fail_HIGH_bin_10-5                   flatParam
+QCD_Fail_HIGH_bin_1-6                    flatParam
+QCD_Fail_HIGH_bin_2-6                    flatParam
+QCD_Fail_HIGH_bin_3-6                    flatParam
+QCD_Fail_HIGH_bin_4-6                    flatParam
+QCD_Fail_HIGH_bin_5-6                    flatParam
+QCD_Fail_HIGH_bin_6-6                    flatParam
+QCD_Fail_HIGH_bin_7-6                    flatParam
+QCD_Fail_HIGH_bin_8-6                    flatParam
+QCD_Fail_HIGH_bin_9-6                    flatParam
+QCD_Fail_HIGH_bin_10-6                   flatParam
+QCD_Fail_HIGH_bin_1-7                    flatParam
+QCD_Fail_HIGH_bin_2-7                    flatParam
+QCD_Fail_HIGH_bin_3-7                    flatParam
+QCD_Fail_HIGH_bin_4-7                    flatParam
+QCD_Fail_HIGH_bin_5-7                    flatParam
+QCD_Fail_HIGH_bin_6-7                    flatParam
+QCD_Fail_HIGH_bin_7-7                    flatParam
+QCD_Fail_HIGH_bin_8-7                    flatParam
+QCD_Fail_HIGH_bin_9-7                    flatParam
+QCD_Fail_HIGH_bin_10-7                   flatParam
+QCD_Fail_HIGH_bin_1-8                    flatParam
+QCD_Fail_HIGH_bin_2-8                    flatParam
+QCD_Fail_HIGH_bin_3-8                    flatParam
+QCD_Fail_HIGH_bin_4-8                    flatParam
+QCD_Fail_HIGH_bin_5-8                    flatParam
+QCD_Fail_HIGH_bin_6-8                    flatParam
+QCD_Fail_HIGH_bin_7-8                    flatParam
+QCD_Fail_HIGH_bin_8-8                    flatParam
+QCD_Fail_HIGH_bin_9-8                    flatParam
+QCD_Fail_HIGH_bin_10-8                   flatParam
+QCD_rpf_par0                             flatParam
+QCD_rpf_par1                             flatParam
+QCD_rpf_par2                             flatParam
+QCD_rpf_par3                             flatParam
+QCD_rpf_par4                             flatParam
+QCD_rpf_par5                             flatParam
