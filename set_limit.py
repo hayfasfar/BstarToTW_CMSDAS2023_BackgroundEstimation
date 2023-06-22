@@ -36,7 +36,7 @@ parser.add_option('--drawIntersection', action="store_true",
                 dest      =   'drawIntersection',
                 help      =   'Draw intersection values')
 parser.add_option('-l', '--lumi', metavar='F', type='string', action='store',
-                default       =       '137.44',
+                default       =       '16.1',
                 dest          =       'lumi',
                 help          =       'Luminosity option')
 parser.add_option('-m', '--mod', metavar='F', type='string', action='store',
@@ -170,16 +170,16 @@ if not options.blind:
     g_limit.SetMarkerSize(1) #0.5
     g_limit.GetYaxis().SetRangeUser(0., 80.)
     g_limit.GetXaxis().SetRangeUser(1.2, 4.2)
-    g_limit.SetMinimum(0.3e-3) #0.005
-    g_limit.SetMaximum(100.)
+    g_limit.SetMinimum(0.3e-2) #0.005
+    g_limit.SetMaximum(1e3)
 else:
     print 'Blinded'
-    g_mclimit.GetXaxis().SetTitle("m_{b*_{"+cstr+"}} [TeV]")  # NOT GENERIC
-    g_mclimit.GetYaxis().SetTitle("#sigma_{b*_{"+cstr+"}} #times B(b*_{"+cstr+"}#rightarrow tW) (pb)") # NOT GENERIC
+    g_mclimit.GetXaxis().SetTitle("m_{g_{KK}_{"+cstr+"}} [TeV]")  # NOT GENERIC
+    g_mclimit.GetYaxis().SetTitle("#sigma_{g_{KK}_{"+cstr+"}} #times B(g_{KK}_{"+cstr+"}#rightarrow t #bar{t}) (pb)") # NOT GENERIC
     g_mclimit.GetYaxis().SetRangeUser(0., 80.)
     g_mclimit.GetXaxis().SetRangeUser(1.2, 4.2)
-    g_mclimit.SetMinimum(0.3e-3) #0.005
-    g_mclimit.SetMaximum(100.)
+    g_mclimit.SetMinimum(0.3e-2) #0.005
+    g_mclimit.SetMaximum(1e3)
 # Expected
 # g_mclimit = TGraph(len(x_mass), x_mass, y_mclimit)
 # g_mclimit.SetTitle("")
@@ -189,8 +189,8 @@ else:
 # g_mclimit.SetLineStyle(2)
 # g_mclimit.SetLineWidth(3)
 # g_mclimit.SetMarkerSize(0.)
-# g_mclimit.GetXaxis().SetTitle("M_{b*} (TeV/c^{2})")
-# g_mclimit.GetYaxis().SetTitle("Upper Limit #sigma_{b*_{"+cstr+"}} #times b (pb)")
+# g_mclimit.GetXaxis().SetTitle("M_{g_{KK}} (TeV/c^{2})")
+# g_mclimit.GetYaxis().SetTitle("Upper Limit #sigma_{g_{KK}_{"+cstr+"}} #times b (pb)")
 # g_mclimit.GetYaxis().SetTitleSize(0.03)
 # g_mclimit.Draw("l")
 # g_mclimit.GetYaxis().SetRangeUser(0., 80.)
@@ -210,8 +210,8 @@ graphWP.SetMarkerColor(4)
 graphWP.SetMarkerSize(0.5)
 graphWP.GetYaxis().SetRangeUser(0., 80.)
 graphWP.GetXaxis().SetRangeUser(1.2, 4.2)
-graphWP.SetMinimum(0.3e-3) #0.005
-graphWP.SetMaximum(100.)
+graphWP.SetMinimum(0.3e-2) #0.005
+graphWP.SetMaximum(1e3)
 for index,mass in enumerate(signal_mass):
     xsec = theory_xsecs[index]
     graphWP.SetPoint(index,    mass,   xsec    )
@@ -271,8 +271,8 @@ g_error.SetFillColor( kGreen+1)
 g_error.SetLineColor(0)
 
 if not options.blind:
-    g_limit.GetXaxis().SetTitle("m_{b*_{"+cstr+"}} [TeV]")  # NOT GENERIC
-    g_limit.GetYaxis().SetTitle("#sigma_{b*_{"+cstr+"}} #times B(b*_{"+cstr+"}#rightarrow tW) (pb)") # NOT GENERIC
+    g_limit.GetXaxis().SetTitle("m_{g_{KK}_{"+cstr+"}} [TeV]")  # NOT GENERIC
+    g_limit.GetYaxis().SetTitle("#sigma_{g_{KK}_{"+cstr+"}} #times B(g_{KK}_{"+cstr+"}#rightarrow t #bar{t}) (pb)") # NOT GENERIC
     g_limit.GetXaxis().SetTitleSize(0.055)
     g_limit.GetYaxis().SetTitleSize(0.05)
     g_limit.Draw('ap')
@@ -285,8 +285,8 @@ if not options.blind:
     g_limit.GetXaxis().SetTitleOffset(1.25)
 
 else:
-    g_mclimit.GetXaxis().SetTitle("m_{b*_{"+cstr+"}} [TeV]")  # NOT GENERIC
-    g_mclimit.GetYaxis().SetTitle("#sigma_{b*_{"+cstr+"}} B(b*_{"+cstr+"}#rightarrow tW) (pb)") # NOT GENERIC
+    g_mclimit.GetXaxis().SetTitle("m_{g_{KK}_{"+cstr+"}} [TeV]")  # NOT GENERIC
+    g_mclimit.GetYaxis().SetTitle("#sigma_{g_{KK}_{"+cstr+"}} #times B(g_{KK}_{"+cstr+"}#rightarrow t #bar{t}) (pb)") # NOT GENERIC
     g_mclimit.GetXaxis().SetTitleSize(0.055)
     g_mclimit.GetYaxis().SetTitleSize(0.05)
     g_mclimit.Draw("al")
@@ -342,8 +342,8 @@ if not options.blind:
 legend.AddEntry(g_mclimit, "Median expected","l")
 legend.AddEntry(g_error, "68% expected", "f")
 legend.AddEntry(g_error95, "95% expected", "f")
-legend.AddEntry(graphWP, "Theory b*_{"+cstr+"}", "l")   # NOT GENERIC
-# legend.AddEntry(graphWPup, "Theory b*_{"+cstr+"} 1 #sigma uncertainty", "l")
+legend.AddEntry(graphWP, "Theory g_{KK}_{"+cstr+"}", "l")   # NOT GENERIC
+# legend.AddEntry(graphWPup, "Theory g_{KK}_{"+cstr+"} 1 #sigma uncertainty", "l")
 
 legend.SetBorderSize(0)
 legend.SetFillStyle(0)
@@ -363,7 +363,7 @@ CMS_lumi.extraText = ''
 CMS_lumi.lumiTextSize     = 0.5
 
 CMS_lumi.cmsTextSize      = 0.8
-CMS_lumi.CMS_lumi(climits, 1, 11)
+CMS_lumi.CMS_lumi(climits, 19, 11)
 
 climits.SaveAs("limits_combine_"+options.lumi.replace('.','p')+"fb_"+options.signals[options.signals.find('/')+1:options.signals.find('.')]+'_'+cstr+".pdf")
 

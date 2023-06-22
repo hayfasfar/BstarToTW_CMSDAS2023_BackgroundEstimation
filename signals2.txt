@@ -1,0 +1,5 @@
+ttbarfits/signalRSGluon2000_area, ttbarfits/signalRSGluon2500_area, ttbarfits/signalRSGluon3000_area, ttbarfits/signalRSGluon3500_area
+2000, 2500, 3000, 3500
+-1, -1,-1, -1
+0.3039, 0.3039, 0.1163, 0.05138
+

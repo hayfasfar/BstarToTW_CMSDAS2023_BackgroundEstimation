@@ -44,9 +44,11 @@ def FTest(poly1, poly2):
 	poly1 (str): e.g. '0x0', '1x1', ...
 	poly2 (str): e.g. '0x0', '1x1', ...
     '''
-    area1 = 'tWfits_{}'.format(poly1)
-    area2 = 'tWfits_{}'.format(poly2)
-
+    area1 = 'ttbarfits_{}'.format(poly1)
+    area2 = 'ttbarfits_{}'.format(poly2)
+    
+    print('getting file {}/runConfig.json'.format(area1))
+    
     twoD1 = TwoDAlphabet(area1, '{}/runConfig.json'.format(area1), loadPrevious=True)
     twoD2 = TwoDAlphabet(area2, '{}/runConfig.json'.format(area2), loadPrevious=True)
 
@@ -55,18 +57,18 @@ def FTest(poly1, poly2):
     nBins = (len(binning.xbinList)-1)*(len(binning.ybinList)-1)
 
     # get number of RPF params and run GoF for poly1
-    params1 = twoD1.ledger.select(_select_signal, 'signalLH2400', '').alphaParams
+    params1 = twoD1.ledger.select(_select_signal, 'signalRSGluon2000', '').alphaParams
     rpfSet1 = params1[params1["name"].str.contains("rratio")]
     nRpfs1  = len(rpfSet1.index)
-    _gof_for_FTest(twoD1, 'tW-2400_area', card_or_w='card.txt')
-    gofFile1 = area1+'/tW-2400_area/higgsCombine_gof_data.GoodnessOfFit.mH120.root'
+    _gof_for_FTest(twoD1, 'ttbar-RSG2000_area', card_or_w='card.txt')
+    gofFile1 = area1+'/ttbar-RSG2000_area/higgsCombine_gof_data.GoodnessOfFit.mH120.root'
 
     # get number of RPF params and run GoF for poly2
-    params2 = twoD2.ledger.select(_select_signal, 'signalLH2400', '').alphaParams
+    params2 = twoD2.ledger.select(_select_signal, 'signalRSGluon2000', '').alphaParams
     rpfSet2 = params2[params2["name"].str.contains("rratio")]
     nRpfs2  = len(rpfSet2.index)
-    _gof_for_FTest(twoD2, 'tW-2400_area', card_or_w='card.txt')
-    gofFile2 = area2+'/tW-2400_area/higgsCombine_gof_data.GoodnessOfFit.mH120.root'
+    _gof_for_FTest(twoD2, 'ttbar-RSG2000_area', card_or_w='card.txt')
+    gofFile2 = area2+'/ttbar-RSG2000_area/higgsCombine_gof_data.GoodnessOfFit.mH120.root'
 
     base_fstat = FstatCalc(gofFile1,gofFile2,nRpfs1,nRpfs2,nBins)
     print(base_fstat)
@@ -135,9 +137,11 @@ def FTest(poly1, poly2):
         latex.SetTextFont(42)
         latex.SetTextFont(52)
         latex.SetTextSize(0.045)
-        c.SaveAs('./ftest_{0}_vs_{1}_notoys.png'.format(poly1,poly2))
+        c.SaveAs('./ftest_{0}_vs_{1}.png'.format(poly1,poly2))
+#         c.SaveAs('./ftest_{0}_vs_{1}_notoys.png'.format(poly1,poly2))
+
 
     plot_FTest(base_fstat,nRpfs1,nRpfs2,nBins)
 
 if __name__=="__main__":
-    FTest('1x1','')
+    FTest('0x0','1x0')

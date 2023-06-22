@@ -55,6 +55,8 @@ _rpf_options = {
     }
 }
 
+params = '3x2'
+
 # for b*, the P/F regions are named MtwvMtPass and MtwvMtFail
 # so, just need to find and replace Pass/Fail depending on which region we want
 def _get_other_region_names(pass_reg_name):
@@ -108,6 +110,10 @@ def make_workspace():
     # is also saved as runConfig.json. This means, if you want to share your analysis with
     # someone, they can grab everything they need from this one spot - no need to have access to
     # the original files! (Note though that you'd have to change the config to point to organized_hists.root).
+    
+    
+    
+    
     twoD = TwoDAlphabet('ttbarfits', 'ttbar.json', loadPrevious=False)
 
     # Create the data - BKGs histograms
@@ -121,6 +127,9 @@ def make_workspace():
         # The Binning object is needed for constructing the Alphabet objects.
         # If one wanted to be very robust, they could get the binning for `p` as well and check 
         # that the binning is consistent between the two.
+        
+        print('regions', p, f)
+        
         binning_f, _ = twoD.GetBinningFor(f)
         
         # Next we construct the Alphabet objects which all inherit from the Generic2D class.
@@ -139,8 +148,8 @@ def make_workspace():
         # Next we'll book a constant transfer function to transfer from Fail -> Pass
         qcd_rpf = ParametricFunction(
                         fail_name.replace('Fail','rpf'),
-                        binning_f, _rpf_options['1x0']['form'],
-                        constraints= _rpf_options['1x0']['constraints']
+                        binning_f, _rpf_options[params]['form'],
+                        constraints= _rpf_options[params]['constraints']
                    )
 
         # We add it to `twoD` so its included when making the RooWorkspace and ledger.
@@ -185,12 +194,12 @@ def ML_fit(signal):
     # workspace is desired. Additionally, a different dataset can be supplied via
     # toyData but this requires supplying almost the full Combine card line and
     # is reserved for quick hacks by those who are familiar with Combine cards.
-    twoD.MakeCard(subset, 'ttbar-RSG{}_area'.format(signal))
+    twoD.MakeCard(subset, 'ttbar-RSGluon{}_area'.format(signal))
 
     # Run the fit! Will run in the area specified by the `subtag` (ie. sub-directory) argument
     # and use the card in that area. Via the cardOrW argument, a different card or workspace can be
     # supplied (passed to the -d option of Combine).
-    twoD.MLfit('ttbar-RSG{}_area'.format(signal),rMin=-1,rMax=20,verbosity=0,extra='--robustFit=1')
+    twoD.MLfit('ttbar-RSGluon{}_area'.format(signal),rMin=-1,rMax=20,verbosity=0,extra='--robustFit=1')
 
 def plot_fit(signal):
     '''
@@ -198,7 +207,7 @@ def plot_fit(signal):
     '''
     twoD = TwoDAlphabet('ttbarfits', 'ttbar.json', loadPrevious=True)
     subset = twoD.ledger.select(_select_signal, 'signalLH{}'.format(signal))
-    twoD.StdPlots('ttbar-RSG{}_area'.format(signal), subset)
+    twoD.StdPlots('ttbar-RSGluon{}_area'.format(signal), subset)
 
 def perform_limit(signal):
     '''
@@ -211,7 +220,7 @@ def perform_limit(signal):
     twoD = TwoDAlphabet('ttbarfits', 'ttbar.json', loadPrevious=True)
 
     # GetParamsOnMatch() opens up the workspace's fitDiagnosticsTest.root and selects the rratio for the background
-    params_to_set = twoD.GetParamsOnMatch('rratio*', 'ttbar-RSG{}_area'.format(signal), 'b')
+    params_to_set = twoD.GetParamsOnMatch('rratio*', 'ttbar-RSGluon{}_area'.format(signal), 'b')
     params_to_set = {k:v['val'] for k,v in params_to_set.items()}
 
     # The iterWorkspaceObjs attribute stores the key-value pairs in the JSON config
@@ -234,8 +243,70 @@ def perform_limit(signal):
             setParams=params_to_set,
             condor=False
         )
+        
+        
+def GoF(signal, tf='', nToys=500, condor=False):
+    '''
+    Calculates the value of the saturated test statistic in data and compares to the 
+    distribution obtained from 500 toys (by default).
+    '''
+    # Load an existing workspace for a given TF parameterization (e.g., 'tWfits_1x1')
+    fitDir = 'ttbarfits{}'.format('_'+tf if tf != '' else '')
+    twoD = TwoDAlphabet(fitDir, '{}/runConfig.json'.format(fitDir), loadPrevious=True)
+    # Creates a Combine card if not already existing (it should exist if you've already fitted this workspace)
+    if not os.path.exists(twoD.tag+'/'+'RSGluon-{}_area/card.txt'.format(signal)):
+        print('{}/RSGluon-{}_area/card.txt does not exist, making card'.format(twoD.tag,signal))
+        subset = twoD.ledger.select(_select_signal, 'signalRSGluon{}'.format(signal), tf)
+        twoD.MakeCard(subset, 'RSGluon-{}_area'.format(signal))
 
+    # Now run Combine's Goodness of Fit method, either on Combine or locally. 
+    if condor == False:
+        twoD.GoodnessOfFit(
+            'RSGluon-{}_area'.format(signal), ntoys=nToys, freezeSignal=0,
+            condor=False
+        )
+	# Once finished, we can plot the results immediately from the output rootfile.
+	plot_GoF(signal, tf, condor)
+    else:
+	# 500 (default) toys, split across 50 condor jobs
+        twoD.GoodnessOfFit(
+            'RSGluon-{}_area'.format(signal), ntoys=nToys, freezeSignal=0,
+            condor=True, njobs=50
+        )
+	# If submitting GoF jobs on condor, you must first wait for them to finish before plotting. 
+	print('Jobs successfully submitted - you can run plot_GoF after the jobs have finished running to plot results')
+    
+def plot_GoF(signal, tf='', condor=False):
+    '''
+    Plot the Goodness of Fit as the measured saturated test statistic in data 
+    compared against the distribution obtained from the toys. 
+    '''
+    plot.plot_gof('ttbarfits{}'.format('_'+tf if tf != '' else ''), 'RSGluon-{}_area'.format(signal), condor=condor)
+
+    
+    
 if __name__ == "__main__":
+    sig = '2000'
     make_workspace()
-    ML_fit(2000)
-    plot_fit(2000)
+    ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
+    plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
+    perform_limit(sig) # Calculate the limit
+#     GoF(sig, tf='', nToys=10, condor=False)	
+    
+#     for sig in ['1000', '1500', '2000', '2500', '3000', '3500', '4000', '4500', '5000']:
+    for sig in ['2000', '2500', '3000', '3500']:
+        ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
+        plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
+        perform_limit(sig) # Calculate the limit
+#         GoF(sig, tf='', nToys=10, condor=False)	
+
+        # Calculate the goodness of fit for a given fit.
+        # Params:
+        #   sig = signal mass
+        #   tf  = transfer function specifying fit directory. 
+        #      tf='0x0' -> 'tWfits_0x0'
+        #      tf=''    -> 'tWfits'
+        #   nToys = number of toys to generate. More toys gives better test statistic distribution,
+        #           but will take longer if not using Condor.
+        #   condor = whether or not to ship jobs off to Condor. Kinda doesn't work well on LXPLUS
+
