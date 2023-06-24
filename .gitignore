@@ -4,3 +4,6 @@ twoD-env/
 tWfits/
 *.pdf
 *.pyc
+*root
+ttbarfits/
+ttbarfits*/
