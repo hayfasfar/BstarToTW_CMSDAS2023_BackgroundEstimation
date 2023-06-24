@@ -11,9 +11,9 @@ def _generate_constraints(nparams):
     out = {}
     for i in range(nparams):
         if i == 0:
-            out[i] = {"MIN":0,"MAX":1}
+            out[i] = {"MIN":0,"MAX":10}
         else:
-            out[i] = {"MIN":-5,"MAX":5}
+            out[i] = {"MIN":0,"MAX":10}
     return out
 
 _rpf_options = {
@@ -52,10 +52,14 @@ _rpf_options = {
     '3x2': {
         'form': '0.1*(@0+@1*x+@2*x*x+@3*x*x*x)*(1+@4*y+@5*y*y)',
         'constraints': _generate_constraints(6)
+    },
+    '3x1': {
+        'form': '0.1*(@0+@1*x+@2*x*x+@3*x*x*x)*(1+@4*y)',
+        'constraints': _generate_constraints(5)
     }
 }
 
-params = '3x2'
+params = '1x0'
 
 # for b*, the P/F regions are named MtwvMtPass and MtwvMtFail
 # so, just need to find and replace Pass/Fail depending on which region we want
@@ -291,16 +295,15 @@ if __name__ == "__main__":
     ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
     plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
     perform_limit(sig) # Calculate the limit
-#     GoF(sig, tf='', nToys=10, condor=False)	
     
+        
 #     for sig in ['1000', '1500', '2000', '2500', '3000', '3500', '4000', '4500', '5000']:
-    for sig in ['2000', '2500', '3000', '3500']:
-        ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
-        plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
-        perform_limit(sig) # Calculate the limit
-#         GoF(sig, tf='', nToys=10, condor=False)	
+#         ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
+#         plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
+#         perform_limit(sig) # Calculate the limit
+# # #         GoF(sig, tf='', nToys=10, condor=False)	
 
-        # Calculate the goodness of fit for a given fit.
+#         # Calculate the goodness of fit for a given fit.
         # Params:
         #   sig = signal mass
         #   tf  = transfer function specifying fit directory. 

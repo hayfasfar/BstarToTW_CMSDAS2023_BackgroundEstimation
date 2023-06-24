@@ -342,7 +342,7 @@ if not options.blind:
 legend.AddEntry(g_mclimit, "Median expected","l")
 legend.AddEntry(g_error, "68% expected", "f")
 legend.AddEntry(g_error95, "95% expected", "f")
-legend.AddEntry(graphWP, "Theory g_{KK}_{"+cstr+"}", "l")   # NOT GENERIC
+# legend.AddEntry(graphWP, "Theory g_{KK}_{"+cstr+"}", "l")   # NOT GENERIC
 # legend.AddEntry(graphWPup, "Theory g_{KK}_{"+cstr+"} 1 #sigma uncertainty", "l")
 
 legend.SetBorderSize(0)
@@ -363,7 +363,7 @@ CMS_lumi.extraText = ''
 CMS_lumi.lumiTextSize     = 0.5
 
 CMS_lumi.cmsTextSize      = 0.8
-CMS_lumi.CMS_lumi(climits, 19, 11)
+CMS_lumi.CMS_lumi(climits, 16, 11)
 
 climits.SaveAs("limits_combine_"+options.lumi.replace('.','p')+"fb_"+options.signals[options.signals.find('/')+1:options.signals.find('.')]+'_'+cstr+".pdf")
 
