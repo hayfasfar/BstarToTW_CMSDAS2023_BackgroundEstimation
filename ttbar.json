@@ -7,7 +7,7 @@
 	"HIST": "MttvsMt$region",
 	"HIST_UP": "MttvsMt$region$systup",
 	"HIST_DOWN": "MttvsMt$region$systdown",
-	"path": "/afs/cern.ch/user/m/mmorris/public/ttbarAllHad/twodalphabet/2016all",
+	"path": "rootfiles/looseTight_2016",
 	"SIGNAME": ["signalRSGluon1000", "signalRSGluon1500", "signalRSGluon2000", "signalRSGluon2500",
                 "signalRSGluon3000", "signalRSGluon3500", "signalRSGluon4000", "signalRSGluon4500", "signalRSGluon5000"
                ]
@@ -123,15 +123,14 @@
 	    "X": {
 		"NAME": "jetmass",
 		"TITLE": "m_{t} [GeV]",
-		"BINS":[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475],
+		"BINS":[ 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 475],
 		"SIGSTART": 125,
 		"SIGEND": 225
 	    },
 	    "Y": {
 		"NAME": "resmass",
 		"TITLE": "m_{t#bar{t}} [GeV]",
-		"BINS": [ 800, 1160, 1520, 1880, 2240, 2600, 2960, 3320, 3680, 4040, 4400,
-       4760, 5120, 5480, 5840]
+		"BINS": [ 800, 1160, 1520, 1880, 2240, 2600, 2960, 3320, 3680, 4040, 4400, 5120, 5840]
 	    }
 	}
     },
