@@ -1,5 +1,5 @@
-# BstarToTW_CMSDAS2023_BackgroundEstimation
-Background estimation for the 2023 CMSDAS $b^\ast \to tW$ exercise, using the updated version of 2DAlphabet
+# $ Z' \rightarrow t \bar{t} $ Background Estimation
+Adapted from background estimation for the 2023 CMSDAS $b^\ast \to tW$ exercise, using the updated version of 2DAlphabet
 
 ## Getting started (in bash shell)
 
@@ -52,13 +52,13 @@ r = ROOT.RooParametricHist()
 ### Finally, clone this repo to the `src` directory as well:
 ```
 cd ~/public/CMSDAS2023/CMSSW_10_6_14/src/
-git clone https://github.com/ammitra/BstarToTW_CMSDAS2023_BackgroundEstimation.git
+git clone https://github.com/mdmorris/BstarToTW_CMSDAS2023_BackgroundEstimation.git
 ```
 OR fork the code onto your own personal space and set the upstream:
 ```
 https://github.com/<USERNAME>/BstarToTW_CMSDAS2023_BackgroundEstimation.git
 cd BstarToTW_CMSDAS2023_BackgroundEstimation
-git remote add upstream https://github.com/ammitra/BstarToTW_CMSDAS2023_BackgroundEstimation.git
+git remote add upstream https://github.com/mdmorris/BstarToTW_CMSDAS2023_BackgroundEstimation.git
 git remote -v
 ```
 
@@ -74,6 +74,12 @@ Then you should be good to go!
 
 ## Background estimate
 For this exercise we will use the [`2DAlphabet`](https://github.com/ammitra/2DAlphabet) github package. This package uses `.json` configuration files to specify the input histograms (to perform the fit) and the uncertainties. These uncertainties will be used inside of the `Higgs Combine` backend, the fitting package used widely within CMS. The 2DAlphabet package serves as a nice interface with Combine to allow the user to use the 2DAlphabet method without having to create their own custom version of combine. 
+
+# Input root files
+
+Root files with the pass and fail histograms can be found in:
+
+`/afs/cern.ch/user/m/mmorris/public/ttbarAllHad/twodalphabet/`
 
 # Configuration file
 
@@ -121,16 +127,20 @@ The configuration file that you will be using is called `bstar.json`, located in
   - (explanation WIP)
 
 # Running the ML fit
-By default, the `bstar.py` python API should set up a workspace, perform the ML fit, and plot the distributions. 
+By default, the `ttbar.py` python API should set up a workspace, perform the ML fit, and plot the distributions. 
 
 ```
-python bstar.py
+python ttbar.py
 ```
 
-The output is stored in the `tWfits/` output directory by default.
+The output is stored in the `ttbarfits/` output directory by default.
+
+The json files for the inclusive histograms are located in `inclusive/`
+The json files for the split b-tag and y regions are locateed in `regions/2016`, `regions/2017`, and `regions/2018`
 
 # Systematics
 Systematic uncertainties were described in the config file section above. Add the Top pT uncertainties to the appropriate processes in the config file, then re-run the fit after having copied the old Combine card somewhere safe. Compare the pre- and post-Top pT Combine cards using `diff`.
 
 # Limit setting
-WIP
+
+Limits for each signal are calculated using the `perform_limit` function in `ttbar.py`. The limits can then be plotted using the `set_limits.py` script, or interactively with the `limits.ipynb` notebook. The mass points and cross sections for each signal are located in `signal_xs.json`

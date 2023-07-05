@@ -118,7 +118,7 @@ def make_workspace():
     
     
     
-    twoD = TwoDAlphabet('ttbarfits_3x1', 'ttbar.json', loadPrevious=False)
+    twoD = TwoDAlphabet('ttbarfits16APV_3x1', 'ttbar16APV.json', loadPrevious=False)
 
     # Create the data - BKGs histograms
     qcd_hists = twoD.InitQCDHists()
@@ -180,8 +180,8 @@ def ML_fit(signal):
     I've redundantly prepended the "subtag" argument with "_area".
     '''
 
-    # the default workspace directory, created in make_workspace(), is called ttbarfits_3x1/
-    twoD = TwoDAlphabet('ttbarfits_3x1', 'ttbar.json', loadPrevious=True)
+    # the default workspace directory, created in make_workspace(), is called ttbarfits16APV_3x1/
+    twoD = TwoDAlphabet('ttbarfits16APV_3x1', 'ttbar16APV.json', loadPrevious=True)
 
     # Create a subset of the primary ledger using the select() method.
     # The select() method takes as a function as its first argument
@@ -209,7 +209,7 @@ def plot_fit(signal):
     '''
     Plots the fits from ML_fit() using 2DAlphabet
     '''
-    twoD = TwoDAlphabet('ttbarfits_3x1', 'ttbar.json', loadPrevious=True)
+    twoD = TwoDAlphabet('ttbarfits16APV_3x1', 'ttbar16APV.json', loadPrevious=True)
     subset = twoD.ledger.select(_select_signal, 'signalLH{}'.format(signal))
     twoD.StdPlots('ttbar-RSGluon{}_area'.format(signal), subset)
 
@@ -221,7 +221,7 @@ def perform_limit(signal):
     something reasonable to create the Asimov toy.
     '''
     # Returns a dictionary of the TF parameters with the names as keys and the post-fit values as dict values.
-    twoD = TwoDAlphabet('ttbarfits_3x1', 'ttbar.json', loadPrevious=True)
+    twoD = TwoDAlphabet('ttbarfits16APV_3x1', 'ttbar16APV.json', loadPrevious=True)
 
     # GetParamsOnMatch() opens up the workspace's fitDiagnosticsTest.root and selects the rratio for the background
     params_to_set = twoD.GetParamsOnMatch('rratio*', 'ttbar-RSGluon{}_area'.format(signal), 'b')
@@ -255,7 +255,7 @@ def GoF(signal, tf='', nToys=500, condor=False):
     distribution obtained from 500 toys (by default).
     '''
     # Load an existing workspace for a given TF parameterization (e.g., 'tWfits_1x1')
-    fitDir = 'ttbarfits_3x1{}'.format('_'+tf if tf != '' else '')
+    fitDir = 'ttbarfits16APV_3x1{}'.format('_'+tf if tf != '' else '')
     twoD = TwoDAlphabet(fitDir, '{}/runConfig.json'.format(fitDir), loadPrevious=True)
     # Creates a Combine card if not already existing (it should exist if you've already fitted this workspace)
     if not os.path.exists(twoD.tag+'/'+'RSGluon-{}_area/card.txt'.format(signal)):
@@ -285,7 +285,7 @@ def plot_GoF(signal, tf='', condor=False):
     Plot the Goodness of Fit as the measured saturated test statistic in data 
     compared against the distribution obtained from the toys. 
     '''
-    plot.plot_gof('ttbarfits_3x1{}'.format('_'+tf if tf != '' else ''), 'RSGluon-{}_area'.format(signal), condor=condor)
+    plot.plot_gof('ttbarfits16APV_3x1{}'.format('_'+tf if tf != '' else ''), 'RSGluon-{}_area'.format(signal), condor=condor)
 
     
     

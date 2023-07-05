@@ -7,8 +7,37 @@
 	"HIST": "MttvsMt$region",
 	"HIST_UP": "MttvsMt$region$systup",
 	"HIST_DOWN": "MttvsMt$region$systdown",
-	"path": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/2016APV",
-	"SIGNAME": ["signalRSGluon2000"]
+	"path": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles",
+	"SIGNAME": ["signalRSGluon1000",
+                "signalRSGluon1500",
+                "signalRSGluon2000",
+                "signalRSGluon2500",
+                "signalRSGluon3000",
+                "signalRSGluon3500",
+                "signalRSGluon4000",
+                "signalRSGluon4500",
+                "signalRSGluon5000",
+                
+                "signalZPrime1000_DM",
+                "signalZPrime1500_DM",
+                "signalZPrime2000_DM",
+                "signalZPrime2500_DM",
+                "signalZPrime3000_DM",
+                "signalZPrime3500_DM",
+                "signalZPrime4000_DM",
+                "signalZPrime4500_DM",
+                "signalZPrime5000_DM",
+                
+                "signalZPrime1000_10",
+                "signalZPrime2000_10",
+                "signalZPrime3000_10",
+                "signalZPrime4000_10",
+                
+                "signalZPrime1000_30",
+                "signalZPrime2000_30",
+                "signalZPrime3000_30",
+                "signalZPrime4000_30"
+               ]
     },
     "REGIONS": {
         "Pass": {
@@ -32,15 +61,15 @@
                 "LOC": "path/FILE:HIST"
             },
         "16_SIGNAME": {
-                "SYSTEMATICS":["lumi", "pileup", "pdf", "jes", "jer"],
+                "SYSTEMATICS":["lumi", "toptag_sf", "jes", "jer", "pileup", "pdf", "q2", "btag", "prefiring"],
                 "SCALE": 1.0, 
                 "COLOR": 1, 
                 "TYPE": "SIGNAL",
                 "TITLE": "g_{RS} (3 TeV)",
                 "LOC": "path/FILE:HIST"
             },
-            "16_TTbar": {
-                "SYSTEMATICS": ["lumi","ttbar_xsec", "pileup", "pdf", "jes", "jer"],
+        "16_TTbar": {
+                "SYSTEMATICS": ["lumi", "toptag_sf", "ttbar_xsec", "jes", "jer", "pileup", "pdf", "q2", "btag", "prefiring"],
                 "SCALE": 1.0,
                 "COLOR": 2,
                 "TYPE": "BKG",
@@ -57,6 +86,10 @@
         "ttbar_xsec": {
             "CODE": 0,
             "VAL": 1.20
+        },
+        "toptag_sf": {
+            "CODE": 0,
+            "VAL": 1.0
         },
         "pileup": {
 	    "ALIAS": "PILEUP",
@@ -89,6 +122,30 @@
 	    "DOWN": "path/FILE:HIST_DOWN",
             "SCALE": 1.0,
 	    "SIGMA": 1.0
+        },
+        "q2": {
+	    "ALIAS": "Q2",
+            "CODE": 2,
+	    "UP": "path/FILE:HIST_UP",
+	    "DOWN": "path/FILE:HIST_DOWN",
+            "SCALE": 1.0,
+	    "SIGMA": 1.0
+        },
+        "btag": {
+	    "ALIAS": "BTAG",
+            "CODE": 2,
+	    "UP": "path/FILE:HIST_UP",
+	    "DOWN": "path/FILE:HIST_DOWN",
+            "SCALE": 1.0,
+	    "SIGMA": 1.0
+        },
+        "prefiring": {
+	    "ALIAS": "PREFIRING",
+            "CODE": 2,
+	    "UP": "path/FILE:HIST_UP",
+	    "DOWN": "path/FILE:HIST_DOWN",
+            "SCALE": 1.0,
+	    "SIGMA": 1.0
         }
      },
     
@@ -104,9 +161,37 @@
 	    "Y": {
 		"NAME": "resmass",
 		"TITLE": "m_{t#bar{t}} [GeV]",
-		"BINS": [800, 1160, 1520, 1880, 2240, 2600, 2960, 3320, 3680]
+		"BINS": [ 800, 1160, 1520, 1880, 2240, 2600, 2960, 3320, 3680, 4040, 4400,
+       4760, 5120, 5480, 5840]
 	    }
 	}
+    },
+    "FIT": {
+        "FORM":"0.1*(@0+@1*x)",
+        "0": {
+            "NOMINAL": 1.0,
+            "MIN":0.0,
+            "MAX":10.0,
+            "ERROR":0.1
+        },
+        "1": {
+            "NOMINAL": 1.0,
+            "MIN":0.0,
+            "MAX":10.0,
+            "ERROR":0.1
+        },
+        "2": {
+            "NOMINAL": 1.0,
+            "MIN":0.0,
+            "MAX":10.0,
+            "ERROR":0.1
+        },
+        "3": {
+            "NOMINAL": 1.0,
+            "MIN":0.0,
+            "MAX":10.0,
+            "ERROR":0.1
+        }
     },
     "OPTIONS": {
 	"blindedPlots": [],

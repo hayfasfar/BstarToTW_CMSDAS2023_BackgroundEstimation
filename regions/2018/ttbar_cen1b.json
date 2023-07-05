@@ -7,16 +7,16 @@
 	"HIST": "MttvsMt$region",
 	"HIST_UP": "MttvsMt$region$systup",
 	"HIST_DOWN": "MttvsMt$region$systdown",
-	"path": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles/2016APV",
+	"path": "/afs/cern.ch/user/m/mmorris/public/ttbarAllHad/twodalphabet/Run2_deepak8_tight_categories",
 	"SIGNAME": ["signalRSGluon2000"]
     },
     "REGIONS": {
-        "Pass": {
-            "PROCESSES": ["16_SIGNAME","16_TTbar"],
+        "cen1bPass": {
+            "PROCESSES": ["18_SIGNAME","18_TTbar"],
             "BINNING": "default"
             },
-        "Fail": {
-                "PROCESSES": ["16_SIGNAME","16_TTbar"],
+        "cen1bFail": {
+                "PROCESSES": ["18_SIGNAME","18_TTbar"],
                 "BINNING": "default"
             }
     },
@@ -28,10 +28,10 @@
                 "TYPE": "DATA",
                 "TITLE": "Data",
                 "HELP": "since the data file is not called TTbarAllHaddata_obs.root, we make an alias to the real name - shown below",
-                "ALIAS": "16_Data",
+                "ALIAS": "18_Data",
                 "LOC": "path/FILE:HIST"
             },
-        "16_SIGNAME": {
+        "18_SIGNAME": {
                 "SYSTEMATICS":["lumi", "pileup", "pdf", "jes", "jer"],
                 "SCALE": 1.0, 
                 "COLOR": 1, 
@@ -39,7 +39,7 @@
                 "TITLE": "g_{RS} (3 TeV)",
                 "LOC": "path/FILE:HIST"
             },
-            "16_TTbar": {
+            "18_TTbar": {
                 "SYSTEMATICS": ["lumi","ttbar_xsec", "pileup", "pdf", "jes", "jer"],
                 "SCALE": 1.0,
                 "COLOR": 2,
@@ -97,7 +97,7 @@
 	    "X": {
 		"NAME": "jetmass",
 		"TITLE": "m_{t} [GeV]",
-		"BINS":[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475],
+		"BINS":[25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475],
 		"SIGSTART": 125,
 		"SIGEND": 225
 	    },
