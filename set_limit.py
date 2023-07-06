@@ -52,9 +52,11 @@ parser.add_option('-m', '--mod', metavar='F', type='string', action='store',
 signal_file = open(options.signals,'r')
 # Read in names of project spaces as a list of strings and strip whitespace
 signal_names = signal_file.readline().split(',')
+print ("signal names ", signal_names)
 signal_names = [n.strip() for n in signal_names]
 # Read in mass as a list of strings, strip whitespace, and convert to ints
 signal_mass = signal_file.readline().split(',')
+print("signal masses is , ", signal_mass )
 signal_mass = [float(m.strip())/1000 for m in signal_mass]
 # Read in xsecs as a list of strings, strip whitespace, and convert to floats
 theory_xsecs = signal_file.readline().split(',')
@@ -76,6 +78,7 @@ tdrstyle.setTDRStyle()
 
 # For each signal
 for this_index, this_name in enumerate(signal_names):
+    print("this name is, ", this_name)
     # Setup call for one of the signal
     this_xsec = signal_xsecs[this_index]
     this_mass = signal_mass[this_index]

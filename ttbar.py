@@ -290,17 +290,17 @@ def plot_GoF(signal, tf='', condor=False):
     
     
 if __name__ == "__main__":
-    sig = '2000'
+    #sig = '2000'
     make_workspace()
-    ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
-    plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
-    perform_limit(sig) # Calculate the limit
+    #ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
+    #plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
+    #perform_limit(sig) # Calculate the limit
     
         
-#     for sig in ['1000', '1500', '2000', '2500', '3000', '3500', '4000', '4500', '5000']:
-#         ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
-#         plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
-#         perform_limit(sig) # Calculate the limit
+    for sig in ['1000', '1500', '2000', '2500', '3000', '3500', '4000', '4500', '5000']:
+          ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
+          plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
+          perform_limit(sig) # Calculate the limit
 # # #         GoF(sig, tf='', nToys=10, condor=False)	
 
 #         # Calculate the goodness of fit for a given fit.

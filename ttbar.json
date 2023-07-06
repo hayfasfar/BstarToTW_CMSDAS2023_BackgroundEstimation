@@ -34,7 +34,7 @@
                 "LOC": "path/FILE:HIST"
             },
         "16_SIGNAME": {
-                "SYSTEMATICS":["lumi", "jes", "jer", "pileup", "pdf", "q2", "btag", "prefiring"],
+                "SYSTEMATICS":["lumi", "jes", "jer", "pileup", "pdf", "q2", "btag"],
                 "SCALE": 1.0, 
                 "COLOR": 1, 
                 "TYPE": "SIGNAL",
@@ -42,7 +42,7 @@
                 "LOC": "path/FILE:HIST"
             },
         "16_TTbar": {
-                "SYSTEMATICS": ["lumi","ttbar_xsec", "jes", "jer", "pileup", "pdf", "q2", "btag", "prefiring"],
+                "SYSTEMATICS": ["lumi","ttbar_xsec", "jes", "jer", "pileup", "pdf", "q2", "btag"],
                 "SCALE": 1.0,
                 "COLOR": 2,
                 "TYPE": "BKG",
@@ -102,14 +102,6 @@
         },
         "btag": {
 	    "ALIAS": "BTAG",
-            "CODE": 2,
-	    "UP": "path/FILE:HIST_UP",
-	    "DOWN": "path/FILE:HIST_DOWN",
-            "SCALE": 1.0,
-	    "SIGMA": 1.0
-        },
-        "prefiring": {
-	    "ALIAS": "PREFIRING",
             "CODE": 2,
 	    "UP": "path/FILE:HIST_UP",
 	    "DOWN": "path/FILE:HIST_DOWN",
