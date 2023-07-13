@@ -118,7 +118,7 @@ def make_workspace():
     
     
     
-    twoD = TwoDAlphabet('ttbarfits_3x1', 'ttbar.json', loadPrevious=False)
+    twoD = TwoDAlphabet('ttbarfits16_3x1', 'ttbar16.json', loadPrevious=False)
 
     # Create the data - BKGs histograms
     qcd_hists = twoD.InitQCDHists()
@@ -180,14 +180,14 @@ def ML_fit(signal):
     I've redundantly prepended the "subtag" argument with "_area".
     '''
 
-    # the default workspace directory, created in make_workspace(), is called ttbarfits_3x1/
-    twoD = TwoDAlphabet('ttbarfits_3x1', 'ttbar.json', loadPrevious=True)
+    # the default workspace directory, created in make_workspace(), is called ttbarfits16_3x1/
+    twoD = TwoDAlphabet('ttbarfits16_3x1', 'ttbar16.json', loadPrevious=True)
 
     # Create a subset of the primary ledger using the select() method.
     # The select() method takes as a function as its first argument
     # and any args to pass to that function as the remiaining arguments
     # to select(). See _select_signal for how to construct the function.
-    subset = twoD.ledger.select(_select_signal, 'signalRSGluon{}'.format(signal))
+    subset = twoD.ledger.select(_select_signal, 'signal{}'.format(signal))
 
     # Make card reads the ledger and creates a Combine card from it.
     # The second argument specifices the sub-directory to save the card in.
@@ -198,20 +198,20 @@ def ML_fit(signal):
     # workspace is desired. Additionally, a different dataset can be supplied via
     # toyData but this requires supplying almost the full Combine card line and
     # is reserved for quick hacks by those who are familiar with Combine cards.
-    twoD.MakeCard(subset, 'ttbar-RSGluon{}_area'.format(signal))
+    twoD.MakeCard(subset, 'ttbar-{}_area'.format(signal))
 
     # Run the fit! Will run in the area specified by the `subtag` (ie. sub-directory) argument
     # and use the card in that area. Via the cardOrW argument, a different card or workspace can be
     # supplied (passed to the -d option of Combine).
-    twoD.MLfit('ttbar-RSGluon{}_area'.format(signal),rMin=-1,rMax=20,verbosity=0,extra='--robustFit=1')
+    twoD.MLfit('ttbar-{}_area'.format(signal),rMin=-1,rMax=20,verbosity=0,extra='--robustFit=1')
 
 def plot_fit(signal):
     '''
     Plots the fits from ML_fit() using 2DAlphabet
     '''
-    twoD = TwoDAlphabet('ttbarfits_3x1', 'ttbar.json', loadPrevious=True)
+    twoD = TwoDAlphabet('ttbarfits16_3x1', 'ttbar16.json', loadPrevious=True)
     subset = twoD.ledger.select(_select_signal, 'signalLH{}'.format(signal))
-    twoD.StdPlots('ttbar-RSGluon{}_area'.format(signal), subset)
+    twoD.StdPlots('ttbar-{}_area'.format(signal), subset)
 
 def perform_limit(signal):
     '''
@@ -221,10 +221,10 @@ def perform_limit(signal):
     something reasonable to create the Asimov toy.
     '''
     # Returns a dictionary of the TF parameters with the names as keys and the post-fit values as dict values.
-    twoD = TwoDAlphabet('ttbarfits_3x1', 'ttbar.json', loadPrevious=True)
+    twoD = TwoDAlphabet('ttbarfits16_3x1', 'ttbar16.json', loadPrevious=True)
 
     # GetParamsOnMatch() opens up the workspace's fitDiagnosticsTest.root and selects the rratio for the background
-    params_to_set = twoD.GetParamsOnMatch('rratio*', 'ttbar-RSGluon{}_area'.format(signal), 'b')
+    params_to_set = twoD.GetParamsOnMatch('rratio*', 'ttbar-{}_area'.format(signal), 'b')
     params_to_set = {k:v['val'] for k,v in params_to_set.items()}
 
     # The iterWorkspaceObjs attribute stores the key-value pairs in the JSON config
@@ -255,12 +255,12 @@ def GoF(signal, tf='', nToys=500, condor=False):
     distribution obtained from 500 toys (by default).
     '''
     # Load an existing workspace for a given TF parameterization (e.g., 'tWfits_1x1')
-    fitDir = 'ttbarfits_3x1{}'.format('_'+tf if tf != '' else '')
+    fitDir = 'ttbarfits16_3x1{}'.format('_'+tf if tf != '' else '')
     twoD = TwoDAlphabet(fitDir, '{}/runConfig.json'.format(fitDir), loadPrevious=True)
     # Creates a Combine card if not already existing (it should exist if you've already fitted this workspace)
     if not os.path.exists(twoD.tag+'/'+'RSGluon-{}_area/card.txt'.format(signal)):
         print('{}/RSGluon-{}_area/card.txt does not exist, making card'.format(twoD.tag,signal))
-        subset = twoD.ledger.select(_select_signal, 'signalRSGluon{}'.format(signal), tf)
+        subset = twoD.ledger.select(_select_signal, 'signal{}'.format(signal), tf)
         twoD.MakeCard(subset, 'RSGluon-{}_area'.format(signal))
 
     # Now run Combine's Goodness of Fit method, either on Combine or locally. 
@@ -285,40 +285,40 @@ def plot_GoF(signal, tf='', condor=False):
     Plot the Goodness of Fit as the measured saturated test statistic in data 
     compared against the distribution obtained from the toys. 
     '''
-    plot.plot_gof('ttbarfits_3x1{}'.format('_'+tf if tf != '' else ''), 'RSGluon-{}_area'.format(signal), condor=condor)
+    plot.plot_gof('ttbarfits16_3x1{}'.format('_'+tf if tf != '' else ''), 'RSGluon-{}_area'.format(signal), condor=condor)
 
     
     
 if __name__ == "__main__":
-     sig = '2000'
-     make_workspace()
-     ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
-     plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
-#     perform_limit(sig) # Calculate the limit
+    sig = 'RSGluon2000'
+    make_workspace()
+    ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
+    plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
+    perform_limit(sig) # Calculate the limit
     
-'''    
-    signals = [
-#         '1000',
-#         '1500',
-#         '2000',
-#         '2500',
-#         '3000',
-        '3500',
-        '4000',
-        '4500',
-        '5000',
-    ]
+    
+#     signals = [
+# #         '1000',
+# #         '1500',
+# #         '2000',
+# #         '2500',
+# #         '3000',
+#         '3500',
+#         '4000',
+#         '4500',
+#         '5000',
+#     ]
     
     
         
-    for sig in signals:
-        try:
-            ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
-            plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
-            perform_limit(sig) # Calculate the limit
-        except:
-            continue
-'''
+#     for sig in signals:
+#         try:
+#             ML_fit(sig)        # Perform the maximum likelihood fit for a given signal mass
+#             plot_fit(sig)      # Plot the postfit results, includinng nuisance pulls and 1D projections
+#             perform_limit(sig) # Calculate the limit
+#         except:
+#             continue
+
 
 #       # Calculate the goodness of fit for a given fit.
         # Params:

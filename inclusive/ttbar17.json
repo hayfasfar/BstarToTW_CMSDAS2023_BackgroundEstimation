@@ -7,8 +7,8 @@
 	"HIST": "MttvsMt$region",
 	"HIST_UP": "MttvsMt$region$systup",
 	"HIST_DOWN": "MttvsMt$region$systdown",
-        "path": "rootfiles/tighttoloose_2b",
-        "SIGNAME": ["signalRSGluon1000",
+	"path": "/afs/cern.ch/user/m/mmorris/BackgroundEstimation/CMSSW_10_6_14/src/BstarToTW_CMSDAS2023_BackgroundEstimation/rootfiles",
+	"SIGNAME": ["signalRSGluon1000",
                 "signalRSGluon1500",
                 "signalRSGluon2000",
                 "signalRSGluon2500",
@@ -17,7 +17,7 @@
                 "signalRSGluon4000",
                 "signalRSGluon4500",
                 "signalRSGluon5000",
-
+                
                 "signalZPrime1000_DM",
                 "signalZPrime1500_DM",
                 "signalZPrime2000_DM",
@@ -26,27 +26,16 @@
                 "signalZPrime3500_DM",
                 "signalZPrime4000_DM",
                 "signalZPrime4500_DM",
-                "signalZPrime5000_DM",
-
-                "signalZPrime1000_10",
-                "signalZPrime2000_10",
-                "signalZPrime3000_10",
-                "signalZPrime4000_10",
-
-                "signalZPrime1000_30",
-                "signalZPrime2000_30",
-                "signalZPrime3000_30",
-                "signalZPrime4000_30"
+                "signalZPrime5000_DM"
                ]
-
     },
     "REGIONS": {
         "Pass": {
-            "PROCESSES": ["16_SIGNAME","16_TTbar"],
+            "PROCESSES": ["17_SIGNAME","17_TTbar"],
             "BINNING": "default"
             },
         "Fail": {
-                "PROCESSES": ["16_SIGNAME","16_TTbar"],
+                "PROCESSES": ["17_SIGNAME","17_TTbar"],
                 "BINNING": "default"
             }
     },
@@ -58,19 +47,19 @@
                 "TYPE": "DATA",
                 "TITLE": "Data",
                 "HELP": "since the data file is not called TTbarAllHaddata_obs.root, we make an alias to the real name - shown below",
-                "ALIAS": "16_Data",
+                "ALIAS": "17_Data",
                 "LOC": "path/FILE:HIST"
             },
-        "16_SIGNAME": {
-                "SYSTEMATICS":["lumi", "jes", "jer", "pileup", "pdf", "q2", "btag"],
+        "17_SIGNAME": {
+                "SYSTEMATICS": ["lumi17", "toptag_sf17", "jes17", "jer17", "pileup17", "pdf17", "q217", "btag17", "prefiring17"],
                 "SCALE": 1.0, 
                 "COLOR": 1, 
                 "TYPE": "SIGNAL",
                 "TITLE": "g_{RS} (3 TeV)",
                 "LOC": "path/FILE:HIST"
             },
-        "16_TTbar": {
-                "SYSTEMATICS": ["lumi","ttbar_xsec", "jes", "jer", "pileup", "pdf", "q2", "btag"],
+        "17_TTbar": {
+                "SYSTEMATICS": ["lumi17", "toptag_sf17", "ttbar_xsec17", "jes17", "jer17", "pileup17", "pdf17", "q217", "btag17", "prefiring17"],
                 "SCALE": 1.0,
                 "COLOR": 2,
                 "TYPE": "BKG",
@@ -80,15 +69,19 @@
         
         },
      "SYSTEMATICS": {
-        "lumi": {
+        "lumi17": {
             "CODE": 0,
             "VAL": 1.018
         },
-        "ttbar_xsec": {
+        "ttbar_xsec17": {
             "CODE": 0,
             "VAL": 1.20
         },
-        "pileup": {
+        "toptag_sf17": {
+            "CODE": 0,
+            "VAL": 1.0
+        },
+        "pileup17": {
 	    "ALIAS": "PILEUP",
             "CODE": 2,
 	    "UP": "path/FILE:HIST_UP",
@@ -96,7 +89,7 @@
             "SCALE": 1.0,
 	    "SIGMA": 1.0
         },
-        "pdf": {
+        "pdf17": {
 	    "ALIAS": "PDF",
             "CODE": 2,
 	    "UP": "path/FILE:HIST_UP",
@@ -104,7 +97,7 @@
             "SCALE": 1.0,
 	    "SIGMA": 1.0
         },
-        "jes": {
+        "jes17": {
 	    "ALIAS": "JES",
             "CODE": 2,
 	    "UP": "path/FILE:HIST_UP",
@@ -112,7 +105,7 @@
             "SCALE": 1.0,
 	    "SIGMA": 1.0
         },
-        "jer": {
+        "jer17": {
 	    "ALIAS": "JER",
             "CODE": 2,
 	    "UP": "path/FILE:HIST_UP",
@@ -120,7 +113,7 @@
             "SCALE": 1.0,
 	    "SIGMA": 1.0
         },
-        "q2": {
+        "q217": {
 	    "ALIAS": "Q2",
             "CODE": 2,
 	    "UP": "path/FILE:HIST_UP",
@@ -128,8 +121,16 @@
             "SCALE": 1.0,
 	    "SIGMA": 1.0
         },
-        "btag": {
+        "btag17": {
 	    "ALIAS": "BTAG",
+            "CODE": 2,
+	    "UP": "path/FILE:HIST_UP",
+	    "DOWN": "path/FILE:HIST_DOWN",
+            "SCALE": 1.0,
+	    "SIGMA": 1.0
+        },
+        "prefiring17": {
+	    "ALIAS": "PREFIRING",
             "CODE": 2,
 	    "UP": "path/FILE:HIST_UP",
 	    "DOWN": "path/FILE:HIST_DOWN",
@@ -143,16 +144,44 @@
 	    "X": {
 		"NAME": "jetmass",
 		"TITLE": "m_{t} [GeV]",
-		"BINS":[ 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 475],
+		"BINS":[0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400, 425, 450, 475],
 		"SIGSTART": 125,
 		"SIGEND": 225
 	    },
 	    "Y": {
 		"NAME": "resmass",
 		"TITLE": "m_{t#bar{t}} [GeV]",
-                "BINS": [ 800, 1100, 1400, 1700, 2000, 2300, 2600, 2900, 3200, 3500, 3800, 4100, 4400, 4700, 5000, 5300, 5600, 5900, 6200, 6500]
+		"BINS": [ 800, 1160, 1520, 1880, 2240, 2600, 2960, 3320, 3680, 4040, 4400,
+       4760, 5120, 5480, 5840]
 	    }
 	}
+    },
+    "FIT": {
+        "FORM":"0.1*(@0+@1*x)",
+        "0": {
+            "NOMINAL": 1.0,
+            "MIN":0.0,
+            "MAX":10.0,
+            "ERROR":0.1
+        },
+        "1": {
+            "NOMINAL": 1.0,
+            "MIN":0.0,
+            "MAX":10.0,
+            "ERROR":0.1
+        },
+        "2": {
+            "NOMINAL": 1.0,
+            "MIN":0.0,
+            "MAX":10.0,
+            "ERROR":0.1
+        },
+        "3": {
+            "NOMINAL": 1.0,
+            "MIN":0.0,
+            "MAX":10.0,
+            "ERROR":0.1
+        }
     },
     "OPTIONS": {
 	"blindedPlots": [],

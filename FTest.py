@@ -58,17 +58,20 @@ def FTest(poly1, poly2):
 
     # get number of RPF params and run GoF for poly1
     params1 = twoD1.ledger.select(_select_signal, 'signalRSGluon2000', '').alphaParams
+    
+    print('params1', params1)
+    
     rpfSet1 = params1[params1["name"].str.contains("rratio")]
     nRpfs1  = len(rpfSet1.index)
-    _gof_for_FTest(twoD1, 'ttbar-RSG2000_area', card_or_w='card.txt')
-    gofFile1 = area1+'/ttbar-RSG2000_area/higgsCombine_gof_data.GoodnessOfFit.mH120.root'
+    _gof_for_FTest(twoD1, 'ttbar-RSGluon2000_area', card_or_w='card.txt')
+    gofFile1 = area1+'/ttbar-RSGluon2000_area/higgsCombine_gof_data.GoodnessOfFit.mH120.root'
 
     # get number of RPF params and run GoF for poly2
     params2 = twoD2.ledger.select(_select_signal, 'signalRSGluon2000', '').alphaParams
     rpfSet2 = params2[params2["name"].str.contains("rratio")]
     nRpfs2  = len(rpfSet2.index)
-    _gof_for_FTest(twoD2, 'ttbar-RSG2000_area', card_or_w='card.txt')
-    gofFile2 = area2+'/ttbar-RSG2000_area/higgsCombine_gof_data.GoodnessOfFit.mH120.root'
+    _gof_for_FTest(twoD2, 'ttbar-RSGluon2000_area', card_or_w='card.txt')
+    gofFile2 = area2+'/ttbar-RSGluon2000_area/higgsCombine_gof_data.GoodnessOfFit.mH120.root'
 
     base_fstat = FstatCalc(gofFile1,gofFile2,nRpfs1,nRpfs2,nBins)
     print(base_fstat)
@@ -144,4 +147,4 @@ def FTest(poly1, poly2):
     plot_FTest(base_fstat,nRpfs1,nRpfs2,nBins)
 
 if __name__=="__main__":
-    FTest('0x0','1x0')
+    FTest('1x0','3x2')

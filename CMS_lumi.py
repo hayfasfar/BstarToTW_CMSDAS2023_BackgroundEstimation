@@ -28,11 +28,19 @@ extraOverCmsTextSize  = 0.76
 lumi_13TeV = "137 fb^{-1}"
 lumi_2016_13TeV = "35.9 fb^{-1}"
 lumi_2016noAPV_13TeV = "16.1 fb^{-1}"
+lumi_2016APV_13TeV = "19.8 fb^{-1}"
 lumi_2017_13TeV = "41.5 fb^{-1}"
 lumi_2018_13TeV = "60 fb^{-1}"
 lumi_8TeV  = "19.7 fb^{-1}" 
 lumi_7TeV  = "5.1 fb^{-1}"
 lumi_sqrtS = ""
+
+lumi_13TeV = "13.7 fb^{-1}"
+lumi_2016_13TeV = "3.59 fb^{-1}"
+lumi_2016noAPV_13TeV = "1.61 fb^{-1}"
+lumi_2016APV_13TeV = "1.98 fb^{-1}"
+lumi_2017_13TeV = "4.15 fb^{-1}"
+lumi_2018_13TeV = "6.0 fb^{-1}"
 
 drawLogo      = False
 
@@ -85,8 +93,11 @@ def CMS_lumi(pad,  iPeriod=19,  iPosX=11, sim=False ):
     elif ( iPeriod==18 ):
         lumiText += lumi_2018_13TeV
         lumiText += " (13 TeV)"
-    elif ( iPeriod==19 ):
+    elif ( iPeriod==16.1 ):
         lumiText += lumi_2016noAPV_13TeV
+        lumiText += " (13 TeV)"
+    elif ( iPeriod==16.2 ):
+        lumiText += lumi_2016APV_13TeV
         lumiText += " (13 TeV)"
     elif ( iPeriod==2 ):
         lumiText += lumi_2016_13TeV+' + '+lumi_2017_13TeV + ' + ' + lumi_2018_13TeV

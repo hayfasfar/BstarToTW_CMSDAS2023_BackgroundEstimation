@@ -1,4 +1,0 @@
-tWfits/signalLH1400_area,  tWfits/signalLH1600_area,  tWfits/signalLH1800_area
-1400,                      1600,                      1800
-0.7848,                    0.3431,                    0.1588
-1.0,                       0.1,                       0.1
